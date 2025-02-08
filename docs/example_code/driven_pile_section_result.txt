@@ -1,0 +1,10 @@
+<bound method PileSection.getName of <rspile_scripting.PileSection.PileSection.PileSection object at 0x000002031D534D70>>
+Rose
+DrivenCrossSectionType.TIMBER_PILE
+0.6
+<bound method PileSection.getName of <rspile_scripting.PileSection.PileSection.PileSection object at 0x000002031D532D50>>
+Gold
+DrivenCrossSectionType.H_PILE
+HPileTypeMetric.HP_360x132
+HPilePerimeter.H_BOX_PERIMETER
+HPileArea.H_PILE_AREA

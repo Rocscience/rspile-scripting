@@ -1,0 +1,28 @@
+Python Script Examples
+======================
+
+RSPile models included in the examples can be found here: `example_models <https://github.com/Rocscience/rs2-scripting/tree/main/docs/example_code/example_models>`
+
+Model
+-----------------
+.. toctree::
+   :maxdepth: 1
+
+   examples/model/model
+   examples/model/modeler
+   examples/soil/soil_property
+   examples/soil/axial_pile_analysis_soil_property
+   examples/soil/lateral_pile_analysis_soil_property
+   examples/soil/driven_soil_property
+   examples/soil/bored_soil_property
+   examples/soil/helical_soil_property
+   examples/pile_sections/pile_analysis_pile_section
+   examples/pile_sections/driven_pile_section
+   examples/pile_sections/bored_pile_section
+   examples/pile_sections/helical_pile_section
+   examples/pile_sections/prestressed_concrete_section
+   examples/pile_types/pile_analysis_pile_type
+   examples/pile_types/driven_pile_type
+   examples/pile_types/bored_pile_type
+   examples/pile_types/helical_pile_type
+   examples/results_analysis/pile_analysis_data_analysis

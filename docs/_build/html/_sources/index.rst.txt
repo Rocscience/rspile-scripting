@@ -1,0 +1,60 @@
+.. RSPile Scripting Client Library documentation master file
+
+RSPile Scripting Reference Manual
+========================================================
+
+**Version: 0.1.0**
+
+Prerequisites
+--------------------
+Before you begin, ensure you have the RSPile program installed. You must have at minimum Version 3.029 in order to use this feature.
+
+
+Python Environment
+--------------------
+There are two methods to run a script, which differ in the Python environment used:
+
+1. Running on RocScript Editor
+	* Comes pre-installed with RSPile and includes the **RSPile Python API library**
+	* For all-level users
+2. Running on your own Python environment
+	* Requires downloading the **RSPile Python API library**
+	* For advanced users
+
+Please refer to `Getting Started with RSPile Python Scripting <https://www.rocscience.com/help/rs2/tutorials/scripting/getting-started-with-rs2-python-scripting>`_
+for more information.
+
+Install RSPile Python API Library
+-----------------------------------
+pip installation
+
+.. code-block::
+   
+   pip install rspile_scripting
+
+If you are not using the latest release of RSPile, you need to specify a library version that matches your RSPile version. For example:
+
+.. code-block::
+
+	pip install "rspile_scripting==3.029"
+
+RSPile Scripting Tutorials
+------------------------------
+Please visit RSPile tutorial website for more detailed tutorials.
+
+
+
+1. `Getting Started with RSPile Python Scripting <https://www.rocscience.com/help/rs2/tutorials/scripting/getting-started-with-rs2-python-scripting>`_
+2. `Anchored Sheet Pile Wall <https://www.rocscience.com/help/rs2/tutorials/scripting/anchored-sheet-pile-wall>`_
+
+.. image:: pictures/cover.png
+
+
+Table of Contents
+-------------------------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   generatedAPIDocFiles/rspile_scripting
+   examples

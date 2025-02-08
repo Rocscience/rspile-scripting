@@ -1,0 +1,23 @@
+Sandy Clayey Silt (Till)
+21.0
+BoredType.COHESIVE
+True
+15.0
+10.0
+CohesiveMethod.TOTAL_STRESS
+0.7
+100.0
+8.0
+15000.0
+150000.0
+Shale Bedrock
+24.1
+BoredType.WEAK_ROCK
+False
+6000.0
+15000.0
+150000.0
+SkinResistanceMethod.KULHAWY_PHOON
+2.5
+TipResistanceMethod.TOMLINSON_WOODWARD
+30.0
