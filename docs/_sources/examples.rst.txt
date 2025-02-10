@@ -1,7 +1,7 @@
 Python Script Examples
 ======================
 
-RSPile models included in the examples can be found here: `example_models <https://github.com/Rocscience/rs2-scripting/tree/main/docs/example_code/example_models>`
+RSPile models included in the examples can be found here: `example_models <https://github.com/Rocscience/rspile-scripting/tree/main/examples>`_
 
 Model
 -----------------
