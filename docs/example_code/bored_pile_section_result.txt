@@ -1,4 +1,0 @@
-Circular Section
-Light_Grey
-BoredCrossSectionType.CIRCULAR
-1.2
