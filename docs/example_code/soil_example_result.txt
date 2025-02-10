@@ -1,0 +1,13 @@
+Glacial Till
+Indigo
+HatchStyle.HORIZONTAL
+True
+True
+21.0
+22.0
+Sandy Clay
+Gold
+HatchStyle.VERTICAL
+False
+False
+19.5
