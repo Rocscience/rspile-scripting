@@ -5,7 +5,6 @@ Utilities
 .. toctree::
    :maxdepth: 1
 
-   rspile_scripting.Utilities.ApplicationManager
    rspile_scripting.Utilities.ColorPicker
 
 
