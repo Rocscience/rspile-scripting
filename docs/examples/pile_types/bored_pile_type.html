@@ -400,6 +400,16 @@ document.write(`
 <span class="n">bell</span><span class="o">.</span><span class="n">setBaseDiameterDefinitionType</span><span class="p">(</span><span class="n">BaseDiamaterDefinitionType</span><span class="o">.</span><span class="n">VALUE</span><span class="p">)</span>
 <span class="n">bell</span><span class="o">.</span><span class="n">setBaseDiameter</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 
+<span class="nb">print</span><span class="p">(</span><span class="n">pile_type1</span><span class="o">.</span><span class="n">getName</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ColorPicker</span><span class="o">.</span><span class="n">getColorName</span><span class="p">(</span><span class="n">pile_type1</span><span class="o">.</span><span class="n">getColor</span><span class="p">()))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pile_type1</span><span class="o">.</span><span class="n">Bored</span><span class="o">.</span><span class="n">Sections</span><span class="o">.</span><span class="n">getCrossSectionType</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pile_type1</span><span class="o">.</span><span class="n">Bored</span><span class="o">.</span><span class="n">Sections</span><span class="o">.</span><span class="n">getPileSegmentsByLength</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pile_type1</span><span class="o">.</span><span class="n">Bored</span><span class="o">.</span><span class="n">Sections</span><span class="o">.</span><span class="n">Bell</span><span class="o">.</span><span class="n">getLengthAboveBell</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pile_type1</span><span class="o">.</span><span class="n">Bored</span><span class="o">.</span><span class="n">Sections</span><span class="o">.</span><span class="n">Bell</span><span class="o">.</span><span class="n">getAngle</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pile_type1</span><span class="o">.</span><span class="n">Bored</span><span class="o">.</span><span class="n">Sections</span><span class="o">.</span><span class="n">Bell</span><span class="o">.</span><span class="n">getBaseThickness</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pile_type1</span><span class="o">.</span><span class="n">Bored</span><span class="o">.</span><span class="n">Sections</span><span class="o">.</span><span class="n">Bell</span><span class="o">.</span><span class="n">getBaseDiameterDefinitionType</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pile_type1</span><span class="o">.</span><span class="n">Bored</span><span class="o">.</span><span class="n">Sections</span><span class="o">.</span><span class="n">Bell</span><span class="o">.</span><span class="n">getBaseDiameter</span><span class="p">())</span>
+
 <span class="n">model</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
 <span class="n">model</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
@@ -409,7 +419,15 @@ document.write(`
 </div>
 <section id="output">
 <h2>Output<a class="headerlink" href="#output" title="Link to this heading">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Circular</span> <span class="n">Concrete</span> <span class="n">Pile</span>
+<span class="n">Red</span>
+<span class="n">BoredPileTypeCrossSection</span><span class="o">.</span><span class="n">BELL</span>
+<span class="p">(</span><span class="mf">1.2</span><span class="p">,</span> <span class="p">[[</span><span class="s1">&#39;Circular Section&#39;</span><span class="p">,</span> <span class="mf">32.0</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Bell&#39;</span><span class="p">,</span> <span class="mf">1.5999999999999999</span><span class="p">]])</span>
+<span class="mf">0.5</span>
+<span class="mf">45.0</span>
+<span class="mf">0.2</span>
+<span class="n">BaseDiamaterDefinitionType</span><span class="o">.</span><span class="n">VALUE</span>
+<span class="mf">3.0</span>
 </pre></div>
 </div>
 </section>
