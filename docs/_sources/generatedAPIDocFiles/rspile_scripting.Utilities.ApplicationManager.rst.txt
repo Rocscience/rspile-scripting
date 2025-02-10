@@ -1,0 +1,7 @@
+ApplicationManager
+=====================================================
+
+.. automodule:: rspile_scripting.Utilities.ApplicationManager
+   :members:
+   :undoc-members:
+   :show-inheritance:

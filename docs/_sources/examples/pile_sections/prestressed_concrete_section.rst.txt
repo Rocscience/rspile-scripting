@@ -6,7 +6,7 @@ Download the `PrestressedConcreteSection.rspile2 <https://github.com/Rocscience/
 .. _prestressed concrete section:
 .. literalinclude:: ../../example_code/prestressed_concrete_section.py
    :language: python
-   :caption: Code Snippet: Manipulation of Pile Sections (Pile Analysis)
+   :caption: Code Snippet: Manipulation of Prestressed Pile Section Reinforcement (Pile Analysis)
 
 Output
 ------------------

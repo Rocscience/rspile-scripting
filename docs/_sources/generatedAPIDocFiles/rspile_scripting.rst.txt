@@ -8,6 +8,7 @@ rspile\_scripting
    rspile_scripting.PileSection
    rspile_scripting.PileType
    rspile_scripting.SoilProperties
+   rspile_scripting.Utilities
 
 
 .. toctree::
@@ -18,7 +19,6 @@ rspile\_scripting
    rspile_scripting.RSPileModel
    rspile_scripting.RSPileModeler
    rspile_scripting.ResultsTable
-   rspile_scripting.enums
 
 
 .. automodule:: rspile_scripting

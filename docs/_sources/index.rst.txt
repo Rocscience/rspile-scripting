@@ -44,8 +44,7 @@ Please visit RSPile tutorial website for more detailed tutorials.
 
 
 
-1. `Getting Started with RSPile Python Scripting <https://www.rocscience.com/help/rs2/tutorials/scripting/getting-started-with-rs2-python-scripting>`_
-2. `Anchored Sheet Pile Wall <https://www.rocscience.com/help/rs2/tutorials/scripting/anchored-sheet-pile-wall>`_
+1. `TODO: Link Case Study/Tutorial Once Complete. <https://www.rocscience.com/help/rs2/tutorials/scripting/getting-started-with-rs2-python-scripting>`_
 
 .. image:: pictures/cover.png
 
@@ -54,7 +53,7 @@ Table of Contents
 -------------------------
 .. toctree::
    :titlesonly:
-   :maxdepth: 1
+   :maxdepth: 2
 
    generatedAPIDocFiles/rspile_scripting
    examples
