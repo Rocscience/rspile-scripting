@@ -371,10 +371,6 @@ document.write(`
 <span class="kn">from</span> <span class="nn">rspile_scripting.Utilities.ColorPicker</span> <span class="kn">import</span> <span class="n">ColorPicker</span>
 <span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">inspect</span>
 
-<span class="c1">#TODO: Remove load_dotenv and overridePathToExecutable in startApplication prior to publish.</span>
-<span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>
-<span class="n">load_dotenv</span><span class="p">()</span>
-
 <span class="n">current_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">inspect</span><span class="o">.</span><span class="n">getfile</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="kc">None</span><span class="p">)))</span> 
 <span class="n">RSPileModeler</span><span class="o">.</span><span class="n">startApplication</span><span class="p">(</span>
 	<span class="n">overridePathToExecutable</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;PATH_TO_RSPILE_CPP_REPO&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">Build</span><span class="se">\\</span><span class="s2">Debug_x64</span><span class="se">\\</span><span class="s2">RSPile.exe&quot;</span><span class="p">,</span> 

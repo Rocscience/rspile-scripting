@@ -364,85 +364,8 @@ document.write(`
   <section id="soil-properties-basic-example">
 <h1>Soil Properties: Basic Example<a class="headerlink" href="#soil-properties-basic-example" title="Link to this heading">#</a></h1>
 <p>Download the <a class="reference external" href="https://github.com/Rocscience/rspile-scripting/blob/main/examples/ExampleModel.rspile2">ExampleModel.rspile2</a> for this example.</p>
-<div class="literal-block-wrapper docutils container" id="id2">
-<span id="id1"></span><div class="code-block-caption"><span class="caption-text">Code Snippet: Manipulation of Soil Properties</span><a class="headerlink" href="#id2" title="Link to this code">#</a></div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">rspile_scripting.RSPileModeler</span> <span class="kn">import</span> <span class="n">RSPileModeler</span>
-<span class="kn">from</span> <span class="nn">rspile_scripting.enums</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">rspile_scripting.Utilities.ColorPicker</span> <span class="kn">import</span> <span class="n">ColorPicker</span>
-<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">inspect</span>
-
-<span class="c1">#TODO: Remove load_dotenv and overridePathToExecutable in startApplication prior to publish.</span>
-<span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>
-<span class="n">load_dotenv</span><span class="p">()</span>
-
-<span class="n">current_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">inspect</span><span class="o">.</span><span class="n">getfile</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="kc">None</span><span class="p">)))</span> 
-<span class="n">RSPileModeler</span><span class="o">.</span><span class="n">startApplication</span><span class="p">(</span>
-	<span class="n">overridePathToExecutable</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;PATH_TO_RSPILE_CPP_REPO&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">Build</span><span class="se">\\</span><span class="s2">Debug_x64</span><span class="se">\\</span><span class="s2">RSPile.exe&quot;</span><span class="p">,</span> 
-	<span class="n">port</span><span class="o">=</span><span class="mi">60044</span>
-	<span class="p">)</span>
-
-<span class="n">rspile_modeler</span> <span class="o">=</span> <span class="n">RSPileModeler</span><span class="p">(</span><span class="mi">60044</span><span class="p">)</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">rspile_modeler</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="sa">rf</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">current_dir</span><span class="si">}</span><span class="s2">\example_models\ExampleModel.rspile2&quot;</span><span class="p">)</span>
-
-<span class="n">soil_property_list</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">getSoilProperties</span><span class="p">()</span>
-
-<span class="n">soil1</span> <span class="o">=</span> <span class="n">soil_property_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">soil2</span> <span class="o">=</span> <span class="n">soil_property_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-
-<span class="n">soil1</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s2">&quot;Glacial Till&quot;</span><span class="p">)</span>
-<span class="n">soil1</span><span class="o">.</span><span class="n">setColor</span><span class="p">(</span><span class="n">ColorPicker</span><span class="o">.</span><span class="n">Indigo</span><span class="p">)</span>
-<span class="n">soil1</span><span class="o">.</span><span class="n">setHatch</span><span class="p">(</span><span class="n">HatchStyle</span><span class="o">.</span><span class="n">HORIZONTAL</span><span class="p">)</span>
-<span class="n">soil1</span><span class="o">.</span><span class="n">setUseDatumDependency</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">soil1</span><span class="o">.</span><span class="n">setUseSaturatedUnitWeight</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">soil1</span><span class="o">.</span><span class="n">setUnitWeight</span><span class="p">(</span><span class="mf">21.0</span><span class="p">)</span>
-<span class="n">soil1</span><span class="o">.</span><span class="n">setSaturatedUnitWeight</span><span class="p">(</span><span class="mf">22.0</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">soil1</span><span class="o">.</span><span class="n">getName</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ColorPicker</span><span class="o">.</span><span class="n">getColorName</span><span class="p">(</span><span class="n">soil1</span><span class="o">.</span><span class="n">getColor</span><span class="p">()))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">soil1</span><span class="o">.</span><span class="n">getHatch</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">soil1</span><span class="o">.</span><span class="n">getUseDatumDependency</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">soil1</span><span class="o">.</span><span class="n">getUseSaturatedUnitWeight</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">soil1</span><span class="o">.</span><span class="n">getUnitWeight</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">soil1</span><span class="o">.</span><span class="n">getSaturatedUnitWeight</span><span class="p">())</span>
-
-<span class="n">soil2</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s2">&quot;Sandy Clay&quot;</span><span class="p">)</span>
-<span class="n">soil2</span><span class="o">.</span><span class="n">setColor</span><span class="p">(</span><span class="n">ColorPicker</span><span class="o">.</span><span class="n">Gold</span><span class="p">)</span>
-<span class="n">soil2</span><span class="o">.</span><span class="n">setHatch</span><span class="p">(</span><span class="n">HatchStyle</span><span class="o">.</span><span class="n">VERTICAL</span><span class="p">)</span>
-<span class="n">soil2</span><span class="o">.</span><span class="n">setUseDatumDependency</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">soil2</span><span class="o">.</span><span class="n">setUseSaturatedUnitWeight</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">soil2</span><span class="o">.</span><span class="n">setUnitWeight</span><span class="p">(</span><span class="mf">19.5</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">soil2</span><span class="o">.</span><span class="n">getName</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ColorPicker</span><span class="o">.</span><span class="n">getColorName</span><span class="p">(</span><span class="n">soil2</span><span class="o">.</span><span class="n">getColor</span><span class="p">()))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">soil2</span><span class="o">.</span><span class="n">getHatch</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">soil2</span><span class="o">.</span><span class="n">getUseDatumDependency</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">soil2</span><span class="o">.</span><span class="n">getUseSaturatedUnitWeight</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">soil2</span><span class="o">.</span><span class="n">getUnitWeight</span><span class="p">())</span>
-
-<span class="n">model</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
-<span class="n">model</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="n">rspile_modeler</span><span class="o">.</span><span class="n">closeApplication</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
 <section id="output">
-<h2>Output<a class="headerlink" href="#output" title="Link to this heading">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Glacial</span> <span class="n">Till</span>
-<span class="n">Indigo</span>
-<span class="n">HatchStyle</span><span class="o">.</span><span class="n">HORIZONTAL</span>
-<span class="kc">True</span>
-<span class="kc">True</span>
-<span class="mf">21.0</span>
-<span class="mf">22.0</span>
-<span class="n">Sandy</span> <span class="n">Clay</span>
-<span class="n">Gold</span>
-<span class="n">HatchStyle</span><span class="o">.</span><span class="n">VERTICAL</span>
-<span class="kc">False</span>
-<span class="kc">False</span>
-<span class="mf">19.5</span>
-</pre></div>
-</div>
+<span id="id1"></span><h2>Output<a class="headerlink" href="#output" title="Link to this heading">#</a></h2>
 </section>
 </section>
 
