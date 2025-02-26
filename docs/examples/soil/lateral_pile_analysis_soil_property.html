@@ -393,21 +393,21 @@ document.write(`
 
 <span class="n">silt_props</span><span class="o">.</span><span class="n">setCohesion</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">silt_props</span><span class="o">.</span><span class="n">setFrictionAngle</span><span class="p">(</span><span class="mi">28</span><span class="p">)</span>
-<span class="n">silt_props</span><span class="o">.</span><span class="n">setInitialStiffness</span><span class="p">(</span><span class="mi">30000</span><span class="p">)</span>
+<span class="n">silt_props</span><span class="o">.</span><span class="n">setInitialStiffness</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
 <span class="n">silt_props</span><span class="o">.</span><span class="n">Datum</span><span class="o">.</span><span class="n">setDatum</span><span class="p">(</span><span class="n">LateralSiltDatumProperties</span><span class="o">.</span><span class="n">COHESION</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 <span class="n">silt_props</span><span class="o">.</span><span class="n">Datum</span><span class="o">.</span><span class="n">setDatum</span><span class="p">(</span><span class="n">LateralSiltDatumProperties</span><span class="o">.</span><span class="n">FRICTION_ANGLE</span><span class="p">,</span> <span class="mi">35</span><span class="p">)</span>
-<span class="n">silt_props</span><span class="o">.</span><span class="n">Datum</span><span class="o">.</span><span class="n">setDatum</span><span class="p">(</span><span class="n">LateralSiltDatumProperties</span><span class="o">.</span><span class="n">INITIAL_STIFFNESS</span><span class="p">,</span> <span class="mi">60000</span><span class="p">)</span>
+<span class="n">silt_props</span><span class="o">.</span><span class="n">Datum</span><span class="o">.</span><span class="n">setDatum</span><span class="p">(</span><span class="n">LateralSiltDatumProperties</span><span class="o">.</span><span class="n">INITIAL_STIFFNESS</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
 
 <span class="n">soil2</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s2">&quot;Massive Rock&quot;</span><span class="p">)</span>
 <span class="n">soil2</span><span class="o">.</span><span class="n">setUnitWeight</span><span class="p">(</span><span class="mi">26</span><span class="p">)</span>
 <span class="n">soil2</span><span class="o">.</span><span class="n">LateralProperties</span><span class="o">.</span><span class="n">setLateralType</span><span class="p">(</span><span class="n">LateralType</span><span class="o">.</span><span class="n">MASSIVE_ROCK</span><span class="p">)</span>
 <span class="n">bedrock_props</span> <span class="o">=</span> <span class="n">soil2</span><span class="o">.</span><span class="n">LateralProperties</span><span class="o">.</span><span class="n">MassiveRock</span>
 
-<span class="n">bedrock_props</span><span class="o">.</span><span class="n">setUniaxialCompressiveStrength</span><span class="p">(</span><span class="mi">150000</span><span class="p">)</span>
+<span class="n">bedrock_props</span><span class="o">.</span><span class="n">setUniaxialCompressiveStrength</span><span class="p">(</span><span class="mi">150</span><span class="p">)</span>
 <span class="n">bedrock_props</span><span class="o">.</span><span class="n">setGeologicalStrengthIndex</span><span class="p">(</span><span class="mi">75</span><span class="p">)</span>
 <span class="n">bedrock_props</span><span class="o">.</span><span class="n">setIntactRockConstant</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
 <span class="n">bedrock_props</span><span class="o">.</span><span class="n">setModulusType</span><span class="p">(</span><span class="n">ModulusType</span><span class="o">.</span><span class="n">USE_INTACT_ROCK_MODULUS</span><span class="p">)</span>
-<span class="n">bedrock_props</span><span class="o">.</span><span class="n">setIntactRockModulus</span><span class="p">(</span><span class="mi">22000000</span><span class="p">)</span>
+<span class="n">bedrock_props</span><span class="o">.</span><span class="n">setIntactRockModulus</span><span class="p">(</span><span class="mi">22000</span><span class="p">)</span>
 <span class="n">bedrock_props</span><span class="o">.</span><span class="n">setPoissonRatio</span><span class="p">(</span><span class="mf">0.35</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">soil1</span><span class="o">.</span><span class="n">getName</span><span class="p">())</span>
@@ -444,18 +444,18 @@ document.write(`
 <span class="n">LateralType</span><span class="o">.</span><span class="n">SILT</span>
 <span class="mf">0.0</span>
 <span class="mf">28.0</span>
-<span class="mf">30000.0</span>
+<span class="mf">30.0</span>
 <span class="mf">5.0</span>
 <span class="mf">35.0</span>
-<span class="mf">60000.0</span>
+<span class="mf">60.0</span>
 <span class="n">Massive</span> <span class="n">Rock</span>
 <span class="mf">26.0</span>
 <span class="n">LateralType</span><span class="o">.</span><span class="n">MASSIVE_ROCK</span>
-<span class="mf">150000.0</span>
+<span class="mf">150.0</span>
 <span class="mf">75.0</span>
 <span class="mf">12.0</span>
 <span class="n">ModulusType</span><span class="o">.</span><span class="n">USE_INTACT_ROCK_MODULUS</span>
-<span class="mf">22000000.0</span>
+<span class="mf">22000.0</span>
 <span class="mf">0.35</span>
 </pre></div>
 </div>

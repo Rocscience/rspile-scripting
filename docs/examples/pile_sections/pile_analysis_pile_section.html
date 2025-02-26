@@ -388,7 +388,7 @@ document.write(`
 <span class="n">pile_section1</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s2">&quot;Reinforced Concrete Section&quot;</span><span class="p">)</span>
 <span class="n">pile_section1</span><span class="o">.</span><span class="n">setColor</span><span class="p">(</span><span class="n">ColorPicker</span><span class="o">.</span><span class="n">Indigo</span><span class="p">)</span>
 <span class="n">pile_section1</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">setSectionType</span><span class="p">(</span><span class="n">SectionType</span><span class="o">.</span><span class="n">REINFORCED_CONCRETE</span><span class="p">)</span>
-<span class="n">pile_section1</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">ReinforcedConcrete</span><span class="o">.</span><span class="n">setCompressiveStrength</span><span class="p">(</span><span class="mi">150000</span><span class="p">)</span>
+<span class="n">pile_section1</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">ReinforcedConcrete</span><span class="o">.</span><span class="n">setCompressiveStrength</span><span class="p">(</span><span class="mi">150</span><span class="p">)</span>
 <span class="n">pile_section1</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">ReinforcedConcrete</span><span class="o">.</span><span class="n">setCrossSectionType</span><span class="p">(</span><span class="n">ReinforcedConcreteCrossSectionType</span><span class="o">.</span><span class="n">RECTANGULAR</span><span class="p">)</span>
 <span class="n">pile_section1</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">ReinforcedConcrete</span><span class="o">.</span><span class="n">CrossSection</span><span class="o">.</span><span class="n">Rectangular</span><span class="o">.</span><span class="n">setDepth</span><span class="p">(</span><span class="mf">0.4</span><span class="p">)</span>
 <span class="n">pile_section1</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">ReinforcedConcrete</span><span class="o">.</span><span class="n">CrossSection</span><span class="o">.</span><span class="n">Rectangular</span><span class="o">.</span><span class="n">setWidth</span><span class="p">(</span><span class="mf">0.4</span><span class="p">)</span>
@@ -396,17 +396,17 @@ document.write(`
 <span class="n">pile_section_1_ibeam_property</span> <span class="o">=</span> <span class="n">pile_section1</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">ReinforcedConcrete</span><span class="o">.</span><span class="n">CrossSection</span><span class="o">.</span><span class="n">ConcreteDesigner</span><span class="o">.</span><span class="n">IBeam</span>
 <span class="n">pile_section_1_ibeam_property</span><span class="o">.</span><span class="n">setUseIBeam</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">pile_section_1_ibeam_property</span><span class="o">.</span><span class="n">setIBeamType</span><span class="p">(</span><span class="n">CanadianIBeamTypes</span><span class="o">.</span><span class="n">HP310X110</span><span class="p">)</span>
-<span class="n">pile_section_1_ibeam_property</span><span class="o">.</span><span class="n">setYieldStress</span><span class="p">(</span><span class="mi">450000</span><span class="p">)</span>
-<span class="n">pile_section_1_ibeam_property</span><span class="o">.</span><span class="n">setElasticModulus</span><span class="p">(</span><span class="mi">200000</span><span class="p">)</span>
+<span class="n">pile_section_1_ibeam_property</span><span class="o">.</span><span class="n">setYieldStress</span><span class="p">(</span><span class="mi">450</span><span class="p">)</span>
+<span class="n">pile_section_1_ibeam_property</span><span class="o">.</span><span class="n">setElasticModulus</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
 
 <span class="n">pile_section2</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s2">&quot;Circular Concrete Section&quot;</span><span class="p">)</span>
 <span class="n">pile_section2</span><span class="o">.</span><span class="n">setColor</span><span class="p">(</span><span class="n">ColorPicker</span><span class="o">.</span><span class="n">Pale_Turquoise</span><span class="p">)</span>
 <span class="n">pile_section2</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">setSectionType</span><span class="p">(</span><span class="n">SectionType</span><span class="o">.</span><span class="n">ELASTIC</span><span class="p">)</span>
-<span class="n">pile_section2</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">Elastic</span><span class="o">.</span><span class="n">setYoungsModulus</span><span class="p">(</span><span class="mi">30000</span><span class="p">)</span>
+<span class="n">pile_section2</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">Elastic</span><span class="o">.</span><span class="n">setYoungsModulus</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
 <span class="n">pile_section2</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">Elastic</span><span class="o">.</span><span class="n">setCrossSectionType</span><span class="p">(</span><span class="n">ElasticCrossSectionType</span><span class="o">.</span><span class="n">CIRCULAR</span><span class="p">)</span>
 <span class="n">pile_section2</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">Elastic</span><span class="o">.</span><span class="n">CrossSection</span><span class="o">.</span><span class="n">Circular</span><span class="o">.</span><span class="n">setDiameter</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">pile_section1</span><span class="o">.</span><span class="n">getName</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pile_section1</span><span class="o">.</span><span class="n">getName</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">ColorPicker</span><span class="o">.</span><span class="n">getColorName</span><span class="p">(</span><span class="n">pile_section1</span><span class="o">.</span><span class="n">getColor</span><span class="p">()))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">pile_section1</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">getSectionType</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">pile_section1</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">ReinforcedConcrete</span><span class="o">.</span><span class="n">getCompressiveStrength</span><span class="p">())</span>
@@ -419,7 +419,7 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="n">pile_section_1_ibeam_property</span><span class="o">.</span><span class="n">getYieldStress</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">pile_section_1_ibeam_property</span><span class="o">.</span><span class="n">getElasticModulus</span><span class="p">())</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">pile_section2</span><span class="o">.</span><span class="n">getName</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pile_section2</span><span class="o">.</span><span class="n">getName</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">ColorPicker</span><span class="o">.</span><span class="n">getColorName</span><span class="p">(</span><span class="n">pile_section2</span><span class="o">.</span><span class="n">getColor</span><span class="p">()))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">pile_section2</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">getSectionType</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">pile_section2</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">Elastic</span><span class="o">.</span><span class="n">getYoungsModulus</span><span class="p">())</span>
@@ -435,21 +435,21 @@ document.write(`
 </div>
 <section id="output">
 <h2>Output<a class="headerlink" href="#output" title="Link to this heading">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">bound</span> <span class="n">method</span> <span class="n">PileSection</span><span class="o">.</span><span class="n">getName</span> <span class="n">of</span> <span class="o">&lt;</span><span class="n">rspile_scripting</span><span class="o">.</span><span class="n">PileSection</span><span class="o">.</span><span class="n">PileSection</span><span class="o">.</span><span class="n">PileSection</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x0000028C87F64830</span><span class="o">&gt;&gt;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Reinforced</span> <span class="n">Concrete</span> <span class="n">Section</span>
 <span class="n">Indigo</span>
 <span class="n">SectionType</span><span class="o">.</span><span class="n">REINFORCED_CONCRETE</span>
-<span class="mf">1.5e-19</span>
+<span class="mf">150.0</span>
 <span class="n">ReinforcedConcreteCrossSectionType</span><span class="o">.</span><span class="n">RECTANGULAR</span>
 <span class="mf">0.4</span>
 <span class="mf">0.4</span>
 <span class="kc">True</span>
 <span class="n">CanadianIBeamTypes</span><span class="o">.</span><span class="n">HP310X110</span>
-<span class="mf">0.45</span>
+<span class="mf">450.0</span>
 <span class="mf">200.0</span>
-<span class="o">&lt;</span><span class="n">bound</span> <span class="n">method</span> <span class="n">PileSection</span><span class="o">.</span><span class="n">getName</span> <span class="n">of</span> <span class="o">&lt;</span><span class="n">rspile_scripting</span><span class="o">.</span><span class="n">PileSection</span><span class="o">.</span><span class="n">PileSection</span><span class="o">.</span><span class="n">PileSection</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x0000028C87F62AD0</span><span class="o">&gt;&gt;</span>
+<span class="n">Circular</span> <span class="n">Concrete</span> <span class="n">Section</span>
 <span class="n">Pale_Turquoise</span>
 <span class="n">SectionType</span><span class="o">.</span><span class="n">ELASTIC</span>
-<span class="mf">2.9999999999999997e-05</span>
+<span class="mf">30.0</span>
 <span class="n">ElasticCrossSectionType</span><span class="o">.</span><span class="n">CIRCULAR</span>
 <span class="mf">1.5</span>
 </pre></div>

@@ -387,16 +387,16 @@ document.write(`
 <span class="n">soil1</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s2">&quot;Sand&quot;</span><span class="p">)</span>
 <span class="n">soil1</span><span class="o">.</span><span class="n">setUnitWeight</span><span class="p">(</span><span class="mi">19</span><span class="p">)</span>
 <span class="n">soil1</span><span class="o">.</span><span class="n">AxialProperties</span><span class="o">.</span><span class="n">setAxialType</span><span class="p">(</span><span class="n">AxialType</span><span class="o">.</span><span class="n">DRILLED_SAND</span><span class="p">)</span>
-<span class="n">soil1</span><span class="o">.</span><span class="n">AxialProperties</span><span class="o">.</span><span class="n">DrilledSand</span><span class="o">.</span><span class="n">setUltimateEndBearingResistance</span><span class="p">(</span><span class="mi">12000</span><span class="p">)</span>
-<span class="n">soil1</span><span class="o">.</span><span class="n">AxialProperties</span><span class="o">.</span><span class="n">DrilledSand</span><span class="o">.</span><span class="n">setUltimateShearResistance</span><span class="p">(</span><span class="mi">9000</span><span class="p">)</span>
+<span class="n">soil1</span><span class="o">.</span><span class="n">AxialProperties</span><span class="o">.</span><span class="n">DrilledSand</span><span class="o">.</span><span class="n">setUltimateEndBearingResistance</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">soil1</span><span class="o">.</span><span class="n">AxialProperties</span><span class="o">.</span><span class="n">DrilledSand</span><span class="o">.</span><span class="n">setUltimateShearResistance</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
 
 <span class="n">soil2</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s2">&quot;Clay&quot;</span><span class="p">)</span>
 <span class="n">soil2</span><span class="o">.</span><span class="n">setUnitWeight</span><span class="p">(</span><span class="mf">19.7</span><span class="p">)</span>
 <span class="n">soil2</span><span class="o">.</span><span class="n">AxialProperties</span><span class="o">.</span><span class="n">setAxialType</span><span class="p">(</span><span class="n">AxialType</span><span class="o">.</span><span class="n">API_CLAY</span><span class="p">)</span>
 <span class="n">soil2</span><span class="o">.</span><span class="n">AxialProperties</span><span class="o">.</span><span class="n">APIClay</span><span class="o">.</span><span class="n">setUndrainedShearStrength</span><span class="p">(</span><span class="mi">45</span><span class="p">)</span>
 <span class="n">soil2</span><span class="o">.</span><span class="n">AxialProperties</span><span class="o">.</span><span class="n">APIClay</span><span class="o">.</span><span class="n">setRemoldedShearStrength</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
-<span class="n">soil2</span><span class="o">.</span><span class="n">AxialProperties</span><span class="o">.</span><span class="n">APIClay</span><span class="o">.</span><span class="n">setMaximumUnitSkinFriction</span><span class="p">(</span><span class="mi">12000</span><span class="p">)</span>
-<span class="n">soil2</span><span class="o">.</span><span class="n">AxialProperties</span><span class="o">.</span><span class="n">APIClay</span><span class="o">.</span><span class="n">setMaximumUnitEndBearingResistance</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span>
+<span class="n">soil2</span><span class="o">.</span><span class="n">AxialProperties</span><span class="o">.</span><span class="n">APIClay</span><span class="o">.</span><span class="n">setMaximumUnitSkinFriction</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">soil2</span><span class="o">.</span><span class="n">AxialProperties</span><span class="o">.</span><span class="n">APIClay</span><span class="o">.</span><span class="n">setMaximumUnitEndBearingResistance</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">soil2</span><span class="o">.</span><span class="n">setUseDatumDependency</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">soil2</span><span class="o">.</span><span class="n">AxialProperties</span><span class="o">.</span><span class="n">APIClay</span><span class="o">.</span><span class="n">Datum</span><span class="o">.</span><span class="n">setDatum</span><span class="p">(</span><span class="n">AxialAPIClayDatumProperties</span><span class="o">.</span><span class="n">UNDRAINED_SHEAR_STRENGTH</span><span class="p">,</span> <span class="mi">120</span><span class="p">)</span>
 <span class="n">soil2</span><span class="o">.</span><span class="n">AxialProperties</span><span class="o">.</span><span class="n">APIClay</span><span class="o">.</span><span class="n">Datum</span><span class="o">.</span><span class="n">setDatum</span><span class="p">(</span><span class="n">AxialAPIClayDatumProperties</span><span class="o">.</span><span class="n">REMOLDED_SHEAR_STRENGTH</span><span class="p">,</span> <span class="mi">65</span><span class="p">)</span>
@@ -430,15 +430,15 @@ document.write(`
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Sand</span>
 <span class="mf">19.0</span>
 <span class="n">AxialType</span><span class="o">.</span><span class="n">DRILLED_SAND</span>
-<span class="mf">12000.0</span>
-<span class="mf">9000.0</span>
+<span class="mf">12.0</span>
+<span class="mf">9.0</span>
 <span class="n">Clay</span>
 <span class="mf">19.7</span>
 <span class="n">AxialType</span><span class="o">.</span><span class="n">API_CLAY</span>
 <span class="mf">45.0</span>
 <span class="mf">25.0</span>
-<span class="mf">12000.0</span>
-<span class="mf">10000.0</span>
+<span class="mf">12.0</span>
+<span class="mf">10.0</span>
 <span class="mf">120.0</span>
 <span class="mf">65.0</span>
 </pre></div>
