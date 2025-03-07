@@ -1,0 +1,15 @@
+HelicalAnalysisMethods
+=============================================================
+
+
+.. toctree::
+   :maxdepth: 1
+
+   RSPileScripting.SoilProperties.HelicalAnalysisMethods.Cohesionless
+   RSPileScripting.SoilProperties.HelicalAnalysisMethods.Cohesive
+
+
+.. automodule:: RSPileScripting.SoilProperties.HelicalAnalysisMethods
+   :members:
+   :show-inheritance:
+   :undoc-members:

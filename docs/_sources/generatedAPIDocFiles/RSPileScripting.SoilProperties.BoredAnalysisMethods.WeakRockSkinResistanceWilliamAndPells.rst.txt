@@ -1,0 +1,7 @@
+WeakRockSkinResistanceWilliamAndPells
+================================================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRockSkinResistanceWilliamAndPells
+   :members:
+   :show-inheritance:
+   :undoc-members:

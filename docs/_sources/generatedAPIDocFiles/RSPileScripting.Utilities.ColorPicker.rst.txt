@@ -1,0 +1,7 @@
+ColorPicker
+============================================
+
+.. automodule:: RSPileScripting.Utilities.ColorPicker
+   :members:
+   :show-inheritance:
+   :undoc-members:

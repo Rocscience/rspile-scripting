@@ -1,0 +1,7 @@
+CohesionlessSPTAASHTO
+================================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesionlessSPTAASHTO
+   :members:
+   :show-inheritance:
+   :undoc-members:

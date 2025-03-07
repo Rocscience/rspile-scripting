@@ -1,0 +1,7 @@
+Square
+=================================================================
+
+.. automodule:: RSPileScripting.PileSection.CrossSectionTypes.Bored.Square
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,17 @@
+Helical
+=============================================================
+
+
+.. toctree::
+   :maxdepth: 1
+
+   RSPileScripting.PileSection.CrossSectionTypes.Helical.CircularHollow
+   RSPileScripting.PileSection.CrossSectionTypes.Helical.CircularSolid
+   RSPileScripting.PileSection.CrossSectionTypes.Helical.SquareHollow
+   RSPileScripting.PileSection.CrossSectionTypes.Helical.SquareSolid
+
+
+.. automodule:: RSPileScripting.PileSection.CrossSectionTypes.Helical
+   :members:
+   :show-inheritance:
+   :undoc-members:

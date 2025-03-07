@@ -1,0 +1,33 @@
+SoilProperties
+======================================
+
+
+.. toctree::
+   :maxdepth: 2
+
+   RSPileScripting.SoilProperties.AxialAnalysisMethods
+   RSPileScripting.SoilProperties.BoredAnalysisMethods
+   RSPileScripting.SoilProperties.DrivenAnalysisMethods
+   RSPileScripting.SoilProperties.HelicalAnalysisMethods
+   RSPileScripting.SoilProperties.LateralAnalysisMethods
+
+
+.. toctree::
+   :maxdepth: 1
+
+   RSPileScripting.SoilProperties.AxialSoil
+   RSPileScripting.SoilProperties.BoredSoil
+   RSPileScripting.SoilProperties.CommonDatumEnums
+   RSPileScripting.SoilProperties.Datum
+   RSPileScripting.SoilProperties.DrivenSoil
+   RSPileScripting.SoilProperties.HelicalSoil
+   RSPileScripting.SoilProperties.InternalFrictionAngleMethod
+   RSPileScripting.SoilProperties.LateralSoil
+   RSPileScripting.SoilProperties.SoilProperty
+   RSPileScripting.SoilProperties.SoilPropertyEnums
+
+
+.. automodule:: RSPileScripting.SoilProperties
+   :members:
+   :show-inheritance:
+   :undoc-members:

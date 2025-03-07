@@ -1,0 +1,7 @@
+Cohesive
+=====================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.HelicalAnalysisMethods.Cohesive
+   :members:
+   :show-inheritance:
+   :undoc-members:

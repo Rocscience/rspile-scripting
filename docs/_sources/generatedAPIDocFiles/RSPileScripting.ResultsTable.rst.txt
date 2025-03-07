@@ -1,0 +1,7 @@
+ResultsTable
+===================================
+
+.. automodule:: RSPileScripting.ResultsTable
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,7 @@
+CohesiveUserDefined
+===============================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.DrivenAnalysisMethods.CohesiveUserDefined
+   :members:
+   :show-inheritance:
+   :undoc-members:

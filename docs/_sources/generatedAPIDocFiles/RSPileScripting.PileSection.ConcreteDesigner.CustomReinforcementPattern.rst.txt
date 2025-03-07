@@ -1,0 +1,7 @@
+CustomReinforcementPattern
+==============================================================================
+
+.. automodule:: RSPileScripting.PileSection.ConcreteDesigner.CustomReinforcementPattern
+   :members:
+   :show-inheritance:
+   :undoc-members:

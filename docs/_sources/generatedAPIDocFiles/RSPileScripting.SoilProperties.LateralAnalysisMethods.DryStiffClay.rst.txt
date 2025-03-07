@@ -1,0 +1,7 @@
+DryStiffClay
+=========================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.LateralAnalysisMethods.DryStiffClay
+   :members:
+   :show-inheritance:
+   :undoc-members:

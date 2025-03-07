@@ -1,0 +1,7 @@
+SubmergedStiffClay
+===============================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.LateralAnalysisMethods.SubmergedStiffClay
+   :members:
+   :show-inheritance:
+   :undoc-members:

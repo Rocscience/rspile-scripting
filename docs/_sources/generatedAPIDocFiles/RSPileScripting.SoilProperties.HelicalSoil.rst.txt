@@ -1,0 +1,7 @@
+HelicalSoil
+=================================================
+
+.. automodule:: RSPileScripting.SoilProperties.HelicalSoil
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,7 @@
+RSPileModeler
+====================================
+
+.. automodule:: RSPileScripting.RSPileModeler
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,14 @@
+Utilities
+=================================
+
+
+.. toctree::
+   :maxdepth: 1
+
+   RSPileScripting.Utilities.ColorPicker
+
+
+.. automodule:: RSPileScripting.Utilities
+   :members:
+   :show-inheritance:
+   :undoc-members:

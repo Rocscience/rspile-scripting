@@ -1,0 +1,7 @@
+WeakRock
+=====================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.LateralAnalysisMethods.WeakRock
+   :members:
+   :show-inheritance:
+   :undoc-members:

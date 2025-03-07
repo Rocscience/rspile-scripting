@@ -30,13 +30,13 @@ pip installation
 
 .. code-block::
    
-   pip install rspile_scripting
+   pip install RSPileScripting
 
 If you are not using the latest release of RSPile, you need to specify a library version that matches your RSPile version. For example:
 
 .. code-block::
 
-	pip install "rspile_scripting==3.029"
+	pip install "RSPileScripting==3.029"
 
 RSPile Scripting Tutorials
 ------------------------------
@@ -55,5 +55,5 @@ Table of Contents
    :titlesonly:
    :maxdepth: 2
 
-   generatedAPIDocFiles/rspile_scripting
+   generatedAPIDocFiles/RSPileScripting
    examples

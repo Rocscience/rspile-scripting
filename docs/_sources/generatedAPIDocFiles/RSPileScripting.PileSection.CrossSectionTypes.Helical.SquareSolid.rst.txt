@@ -1,0 +1,7 @@
+SquareSolid
+========================================================================
+
+.. automodule:: RSPileScripting.PileSection.CrossSectionTypes.Helical.SquareSolid
+   :members:
+   :show-inheritance:
+   :undoc-members:

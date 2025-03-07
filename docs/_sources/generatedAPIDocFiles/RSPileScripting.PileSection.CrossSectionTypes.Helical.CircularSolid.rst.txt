@@ -1,0 +1,7 @@
+CircularSolid
+==========================================================================
+
+.. automodule:: RSPileScripting.PileSection.CrossSectionTypes.Helical.CircularSolid
+   :members:
+   :show-inheritance:
+   :undoc-members:

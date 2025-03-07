@@ -1,0 +1,7 @@
+StrongRock
+=======================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.LateralAnalysisMethods.StrongRock
+   :members:
+   :show-inheritance:
+   :undoc-members:

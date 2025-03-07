@@ -1,0 +1,7 @@
+MosherSand
+=====================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.AxialAnalysisMethods.MosherSand
+   :members:
+   :show-inheritance:
+   :undoc-members:

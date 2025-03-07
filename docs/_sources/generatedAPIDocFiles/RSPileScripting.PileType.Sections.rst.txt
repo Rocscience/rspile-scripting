@@ -1,0 +1,20 @@
+Sections
+=========================================
+
+
+.. toctree::
+   :maxdepth: 1
+
+   RSPileScripting.PileType.Sections.Bell
+   RSPileScripting.PileType.Sections.BoredSections
+   RSPileScripting.PileType.Sections.DrivenSections
+   RSPileScripting.PileType.Sections.HelicalSections
+   RSPileScripting.PileType.Sections.Helices
+   RSPileScripting.PileType.Sections.PileAnalysisSections
+   RSPileScripting.PileType.Sections.SectionsBaseClass
+
+
+.. automodule:: RSPileScripting.PileType.Sections
+   :members:
+   :show-inheritance:
+   :undoc-members:

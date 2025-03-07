@@ -1,0 +1,7 @@
+Helices
+================================================
+
+.. automodule:: RSPileScripting.PileType.Sections.Helices
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,7 @@
+Cohesive
+====================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.DrivenAnalysisMethods.Cohesive
+   :members:
+   :show-inheritance:
+   :undoc-members:

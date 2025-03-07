@@ -1,0 +1,7 @@
+ClosedEndPipe
+=========================================================================
+
+.. automodule:: RSPileScripting.PileSection.CrossSectionTypes.Driven.ClosedEndPipe
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,7 @@
+CohesionlessSkinFrictionSPTTable
+============================================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.DrivenAnalysisMethods.CohesionlessSkinFrictionSPTTable
+   :members:
+   :show-inheritance:
+   :undoc-members:

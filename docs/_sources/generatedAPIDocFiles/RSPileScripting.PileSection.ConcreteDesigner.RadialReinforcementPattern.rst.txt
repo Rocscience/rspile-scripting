@@ -1,0 +1,7 @@
+RadialReinforcementPattern
+==============================================================================
+
+.. automodule:: RSPileScripting.PileSection.ConcreteDesigner.RadialReinforcementPattern
+   :members:
+   :show-inheritance:
+   :undoc-members:

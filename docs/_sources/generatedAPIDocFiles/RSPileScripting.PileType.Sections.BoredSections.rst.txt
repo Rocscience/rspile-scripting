@@ -1,0 +1,7 @@
+BoredSections
+======================================================
+
+.. automodule:: RSPileScripting.PileType.Sections.BoredSections
+   :members:
+   :show-inheritance:
+   :undoc-members:

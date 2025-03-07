@@ -1,0 +1,7 @@
+CoreBaseClass
+=================================================================
+
+.. automodule:: RSPileScripting.PileSection.ConcreteDesigner.CoreBaseClass
+   :members:
+   :show-inheritance:
+   :undoc-members:

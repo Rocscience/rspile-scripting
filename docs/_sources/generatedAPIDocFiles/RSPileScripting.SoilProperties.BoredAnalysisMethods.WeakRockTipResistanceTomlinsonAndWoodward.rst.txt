@@ -1,0 +1,7 @@
+WeakRockTipResistanceTomlinsonAndWoodward
+====================================================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRockTipResistanceTomlinsonAndWoodward
+   :members:
+   :show-inheritance:
+   :undoc-members:

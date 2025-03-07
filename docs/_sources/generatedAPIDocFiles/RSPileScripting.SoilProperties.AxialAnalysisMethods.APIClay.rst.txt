@@ -1,0 +1,7 @@
+APIClay
+==================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.AxialAnalysisMethods.APIClay
+   :members:
+   :show-inheritance:
+   :undoc-members:

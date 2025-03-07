@@ -1,0 +1,7 @@
+CohesionlessBetaNQMethod
+===================================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesionlessBetaNQMethod
+   :members:
+   :show-inheritance:
+   :undoc-members:

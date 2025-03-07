@@ -1,0 +1,7 @@
+CircularHollow
+===========================================================================
+
+.. automodule:: RSPileScripting.PileSection.CrossSectionTypes.Helical.CircularHollow
+   :members:
+   :show-inheritance:
+   :undoc-members:

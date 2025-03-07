@@ -1,0 +1,7 @@
+Elastic
+==================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.AxialAnalysisMethods.Elastic
+   :members:
+   :show-inheritance:
+   :undoc-members:

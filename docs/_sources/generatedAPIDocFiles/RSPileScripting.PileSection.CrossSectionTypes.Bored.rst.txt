@@ -1,0 +1,16 @@
+Bored
+===========================================================
+
+
+.. toctree::
+   :maxdepth: 1
+
+   RSPileScripting.PileSection.CrossSectionTypes.Bored.Circular
+   RSPileScripting.PileSection.CrossSectionTypes.Bored.Rectangular
+   RSPileScripting.PileSection.CrossSectionTypes.Bored.Square
+
+
+.. automodule:: RSPileScripting.PileSection.CrossSectionTypes.Bored
+   :members:
+   :show-inheritance:
+   :undoc-members:

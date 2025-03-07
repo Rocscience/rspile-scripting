@@ -1,0 +1,7 @@
+InternalFrictionAngleMethod
+=================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.InternalFrictionAngleMethod
+   :members:
+   :show-inheritance:
+   :undoc-members:

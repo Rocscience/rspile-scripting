@@ -1,0 +1,7 @@
+Circular
+===================================================================
+
+.. automodule:: RSPileScripting.PileSection.CrossSectionTypes.Bored.Circular
+   :members:
+   :show-inheritance:
+   :undoc-members:

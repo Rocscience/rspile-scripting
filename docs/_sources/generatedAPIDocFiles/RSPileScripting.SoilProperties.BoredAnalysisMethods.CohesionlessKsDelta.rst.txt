@@ -1,0 +1,7 @@
+CohesionlessKsDelta
+==============================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesionlessKsDelta
+   :members:
+   :show-inheritance:
+   :undoc-members:

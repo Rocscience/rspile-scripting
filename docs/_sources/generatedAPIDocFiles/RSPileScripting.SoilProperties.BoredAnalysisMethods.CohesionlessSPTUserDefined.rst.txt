@@ -1,0 +1,7 @@
+CohesionlessSPTUserDefined
+=====================================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesionlessSPTUserDefined
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,7 @@
+HelicalSections
+========================================================
+
+.. automodule:: RSPileScripting.PileType.Sections.HelicalSections
+   :members:
+   :show-inheritance:
+   :undoc-members:

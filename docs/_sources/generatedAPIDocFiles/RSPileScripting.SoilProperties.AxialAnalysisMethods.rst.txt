@@ -1,0 +1,21 @@
+AxialAnalysisMethods
+===========================================================
+
+
+.. toctree::
+   :maxdepth: 1
+
+   RSPileScripting.SoilProperties.AxialAnalysisMethods.APIClay
+   RSPileScripting.SoilProperties.AxialAnalysisMethods.APISand
+   RSPileScripting.SoilProperties.AxialAnalysisMethods.CoyleAndReeseClay
+   RSPileScripting.SoilProperties.AxialAnalysisMethods.DrilledClay
+   RSPileScripting.SoilProperties.AxialAnalysisMethods.DrilledSand
+   RSPileScripting.SoilProperties.AxialAnalysisMethods.Elastic
+   RSPileScripting.SoilProperties.AxialAnalysisMethods.MosherSand
+   RSPileScripting.SoilProperties.AxialAnalysisMethods.UserDefined
+
+
+.. automodule:: RSPileScripting.SoilProperties.AxialAnalysisMethods
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,7 @@
+RectangleReinforcementPattern
+=================================================================================
+
+.. automodule:: RSPileScripting.PileSection.ConcreteDesigner.RectangleReinforcementPattern
+   :members:
+   :show-inheritance:
+   :undoc-members:

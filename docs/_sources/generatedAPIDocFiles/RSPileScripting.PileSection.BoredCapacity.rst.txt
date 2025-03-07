@@ -1,0 +1,7 @@
+BoredCapacity
+================================================
+
+.. automodule:: RSPileScripting.PileSection.BoredCapacity
+   :members:
+   :show-inheritance:
+   :undoc-members:

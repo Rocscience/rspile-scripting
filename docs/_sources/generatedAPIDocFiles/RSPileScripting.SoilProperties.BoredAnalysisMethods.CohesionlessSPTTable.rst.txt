@@ -1,0 +1,7 @@
+CohesionlessSPTTable
+===============================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesionlessSPTTable
+   :members:
+   :show-inheritance:
+   :undoc-members:

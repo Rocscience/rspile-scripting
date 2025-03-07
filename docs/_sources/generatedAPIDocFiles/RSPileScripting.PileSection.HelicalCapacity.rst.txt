@@ -1,0 +1,7 @@
+HelicalCapacity
+==================================================
+
+.. automodule:: RSPileScripting.PileSection.HelicalCapacity
+   :members:
+   :show-inheritance:
+   :undoc-members:

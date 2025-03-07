@@ -1,0 +1,7 @@
+WeakRockSkinResistanceKulhawyAndPhoon
+================================================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRockSkinResistanceKulhawyAndPhoon
+   :members:
+   :show-inheritance:
+   :undoc-members:

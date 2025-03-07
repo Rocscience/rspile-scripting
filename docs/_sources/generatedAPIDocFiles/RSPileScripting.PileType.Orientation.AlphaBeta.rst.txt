@@ -1,0 +1,7 @@
+AlphaBeta
+=====================================================
+
+.. automodule:: RSPileScripting.PileType.Orientation.AlphaBeta
+   :members:
+   :show-inheritance:
+   :undoc-members:

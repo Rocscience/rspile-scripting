@@ -1,0 +1,7 @@
+DrilledClay
+======================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.AxialAnalysisMethods.DrilledClay
+   :members:
+   :show-inheritance:
+   :undoc-members:

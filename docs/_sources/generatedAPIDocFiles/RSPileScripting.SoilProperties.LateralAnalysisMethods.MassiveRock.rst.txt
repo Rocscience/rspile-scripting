@@ -1,0 +1,7 @@
+MassiveRock
+========================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.LateralAnalysisMethods.MassiveRock
+   :members:
+   :show-inheritance:
+   :undoc-members:

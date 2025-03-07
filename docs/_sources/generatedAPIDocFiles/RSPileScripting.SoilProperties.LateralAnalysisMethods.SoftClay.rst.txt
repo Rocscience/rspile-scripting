@@ -1,0 +1,7 @@
+SoftClay
+=====================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.LateralAnalysisMethods.SoftClay
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,7 @@
+SoilProperty
+==================================================
+
+.. automodule:: RSPileScripting.SoilProperties.SoilProperty
+   :members:
+   :show-inheritance:
+   :undoc-members:

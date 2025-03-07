@@ -28,7 +28,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -39,7 +39,7 @@
     <script src="../../_static/jquery.js?v=5d32c60e"></script>
     <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
     <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
-    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
@@ -145,8 +145,8 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../generatedAPIDocFiles/rspile_scripting.html">
-    rspile_scripting
+  <a class="nav-link nav-internal" href="../../generatedAPIDocFiles/RSPileScripting.html">
+    RSPileScripting
   </a>
 </li>
 
@@ -242,8 +242,8 @@ document.write(`
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../generatedAPIDocFiles/rspile_scripting.html">
-    rspile_scripting
+  <a class="nav-link nav-internal" href="../../generatedAPIDocFiles/RSPileScripting.html">
+    RSPileScripting
   </a>
 </li>
 
@@ -366,15 +366,12 @@ document.write(`
 <p>Download the <a class="reference external" href="https://github.com/Rocscience/rspile-scripting/blob/main/examples/PrestressedConcreteSection.rspile2">PrestressedConcreteSection.rspile2</a> for this example.</p>
 <div class="literal-block-wrapper docutils container" id="id1">
 <span id="prestressed-concrete-section"></span><div class="code-block-caption"><span class="caption-text">Code Snippet: Manipulation of Prestressed Pile Section Reinforcement (Pile Analysis)</span><a class="headerlink" href="#id1" title="Link to this code">#</a></div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">rspile_scripting.RSPileModeler</span> <span class="kn">import</span> <span class="n">RSPileModeler</span>
-<span class="kn">from</span> <span class="nn">rspile_scripting.enums</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">inspect</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">RSPileScripting.RSPileModeler</span><span class="w"> </span><span class="kn">import</span> <span class="n">RSPileModeler</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">RSPileScripting.enums</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span><span class="o">,</span><span class="w"> </span><span class="nn">inspect</span>
 
 <span class="n">current_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">inspect</span><span class="o">.</span><span class="n">getfile</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="kc">None</span><span class="p">)))</span> 
-<span class="n">RSPileModeler</span><span class="o">.</span><span class="n">startApplication</span><span class="p">(</span>
-	<span class="n">overridePathToExecutable</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;PATH_TO_RSPILE_CPP_REPO&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">Build</span><span class="se">\\</span><span class="s2">Debug_x64</span><span class="se">\\</span><span class="s2">RSPile.exe&quot;</span><span class="p">,</span> 
-	<span class="n">port</span><span class="o">=</span><span class="mi">60044</span>
-	<span class="p">)</span>
+<span class="n">RSPileModeler</span><span class="o">.</span><span class="n">startApplication</span><span class="p">(</span><span class="mi">60044</span><span class="p">)</span>
 
 <span class="n">rspile_modeler</span> <span class="o">=</span> <span class="n">RSPileModeler</span><span class="p">(</span><span class="mi">60044</span><span class="p">)</span>
 <span class="n">model</span> <span class="o">=</span> <span class="n">rspile_modeler</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="sa">rf</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">current_dir</span><span class="si">}</span><span class="s2">\example_models\PrestressedConcreteSection.rspile2&quot;</span><span class="p">)</span>
@@ -541,7 +538,7 @@ document.write(`
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.4.7.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>

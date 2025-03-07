@@ -1,0 +1,29 @@
+BoredAnalysisMethods
+===========================================================
+
+
+.. toctree::
+   :maxdepth: 1
+
+   RSPileScripting.SoilProperties.BoredAnalysisMethods.Cohesionless
+   RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesionlessBetaNQMethod
+   RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesionlessKsDelta
+   RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesionlessSPTAASHTO
+   RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesionlessSPTTable
+   RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesionlessSPTUserDefined
+   RSPileScripting.SoilProperties.BoredAnalysisMethods.Cohesive
+   RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesiveEffectiveStress
+   RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesiveTotalStress
+   RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRock
+   RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRockSkinResistance
+   RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRockSkinResistanceKulhawyAndPhoon
+   RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRockSkinResistanceWilliamAndPells
+   RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRockTipResistance
+   RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRockTipResistanceTomlinsonAndWoodward
+   RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRockTipResistanceUserDefinedB
+
+
+.. automodule:: RSPileScripting.SoilProperties.BoredAnalysisMethods
+   :members:
+   :show-inheritance:
+   :undoc-members:

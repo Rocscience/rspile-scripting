@@ -1,0 +1,7 @@
+CasingBaseClass
+===================================================================
+
+.. automodule:: RSPileScripting.PileSection.ConcreteDesigner.CasingBaseClass
+   :members:
+   :show-inheritance:
+   :undoc-members:

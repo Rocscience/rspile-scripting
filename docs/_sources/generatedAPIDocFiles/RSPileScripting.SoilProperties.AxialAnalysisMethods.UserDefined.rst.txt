@@ -1,0 +1,7 @@
+UserDefined
+======================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.AxialAnalysisMethods.UserDefined
+   :members:
+   :show-inheritance:
+   :undoc-members:

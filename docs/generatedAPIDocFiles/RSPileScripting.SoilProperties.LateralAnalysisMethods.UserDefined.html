@@ -1,0 +1,690 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>UserDefined &#8212; RSPile Scripting Reference Manual  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'generatedAPIDocFiles/RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined';</script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="WeakRock" href="RSPileScripting.SoilProperties.LateralAnalysisMethods.WeakRock.html" />
+    <link rel="prev" title="SubmergedStiffClay" href="RSPileScripting.SoilProperties.LateralAnalysisMethods.SubmergedStiffClay.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="RSPile Scripting Reference Manual  documentation - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="RSPile Scripting Reference Manual  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="RSPileScripting.html">
+    RSPileScripting
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../examples.html">
+    Python Script Examples
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="RSPileScripting.html">
+    RSPileScripting
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../examples.html">
+    Python Script Examples
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="RSPileScripting.PileSection.html">PileSection</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.html">ConcreteDesigner</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.CasingBaseClass.html">CasingBaseClass</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.ConcreteDesignerEnumImports.html">ConcreteDesignerEnumImports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.CoreBaseClass.html">CoreBaseClass</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.CustomReinforcementPattern.html">CustomReinforcementPattern</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.IBeam.html">IBeam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.IBeamEnums.html">IBeamEnums</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.PrestressedConcreteCasing.html">PrestressedConcreteCasing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.PrestressedConcreteCore.html">PrestressedConcreteCore</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.PrestressedConcreteDesigner.html">PrestressedConcreteDesigner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.PrestressedConcreteReinforcement.html">PrestressedConcreteReinforcement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.PrestressedConcreteReinforcementPattern.html">PrestressedConcreteReinforcementPattern</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.RadialReinforcementPattern.html">RadialReinforcementPattern</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.RectangleReinforcementPattern.html">RectangleReinforcementPattern</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.ReinforcedConcreteCasing.html">ReinforcedConcreteCasing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.ReinforcedConcreteCore.html">ReinforcedConcreteCore</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.ReinforcedConcreteDesigner.html">ReinforcedConcreteDesigner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.ReinforcedConcreteReinforcement.html">ReinforcedConcreteReinforcement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.ReinforcedConcreteReinforcementPattern.html">ReinforcedConcreteReinforcementPattern</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.ReinforcementBaseClass.html">ReinforcementBaseClass</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileSection.ConcreteDesigner.ReinforcementPatternBaseClass.html">ReinforcementPatternBaseClass</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.html">CrossSectionTypes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.Bored.html">Bored</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.Bored.Circular.html">Circular</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.Bored.Rectangular.html">Rectangular</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.Bored.Square.html">Square</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.Driven.html">Driven</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.Driven.ClosedEndPipe.html">ClosedEndPipe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.Driven.Concrete.html">Concrete</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.Driven.HPile.html">HPile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.Driven.OpenEndPipe.html">OpenEndPipe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.Driven.Raymond.html">Raymond</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.Driven.Timber.html">Timber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.Driven.UserSelectedArea.html">UserSelectedArea</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.Helical.html">Helical</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.Helical.CircularHollow.html">CircularHollow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.Helical.CircularSolid.html">CircularSolid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.Helical.SquareHollow.html">SquareHollow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.Helical.SquareSolid.html">SquareSolid</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.PileAnalysis.html">PileAnalysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.PileAnalysis.Circular.html">Circular</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.PileAnalysis.Pipe.html">Pipe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.PileAnalysis.Rectangular.html">Rectangular</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RSPileScripting.PileSection.CrossSectionTypes.PileAnalysis.UserDefined.html">UserDefined</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.PileSection.BoredCapacity.html">BoredCapacity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.PileSection.DrivenCapacity.html">DrivenCapacity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.PileSection.Elastic.html">Elastic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.PileSection.HelicalCapacity.html">HelicalCapacity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.PileSection.PileAnalysis.html">PileAnalysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.PileSection.PileSection.html">PileSection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.PileSection.Plastic.html">Plastic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.PileSection.PrestressedConcrete.html">PrestressedConcrete</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.PileSection.ReinforcedConcrete.html">ReinforcedConcrete</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="RSPileScripting.PileType.html">PileType</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="RSPileScripting.PileType.Orientation.html">Orientation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileType.Orientation.AlphaBeta.html">AlphaBeta</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileType.Orientation.Orientation.html">Orientation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileType.Orientation.Vector.html">Vector</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="RSPileScripting.PileType.Sections.html">Sections</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileType.Sections.Bell.html">Bell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileType.Sections.BoredSections.html">BoredSections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileType.Sections.DrivenSections.html">DrivenSections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileType.Sections.HelicalSections.html">HelicalSections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileType.Sections.Helices.html">Helices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileType.Sections.PileAnalysisSections.html">PileAnalysisSections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.PileType.Sections.SectionsBaseClass.html">SectionsBaseClass</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.PileType.PileType.html">PileType</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="RSPileScripting.SoilProperties.html">SoilProperties</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="RSPileScripting.SoilProperties.AxialAnalysisMethods.html">AxialAnalysisMethods</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.AxialAnalysisMethods.APIClay.html">APIClay</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.AxialAnalysisMethods.APISand.html">APISand</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.AxialAnalysisMethods.CoyleAndReeseClay.html">CoyleAndReeseClay</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.AxialAnalysisMethods.DrilledClay.html">DrilledClay</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.AxialAnalysisMethods.DrilledSand.html">DrilledSand</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.AxialAnalysisMethods.Elastic.html">Elastic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.AxialAnalysisMethods.MosherSand.html">MosherSand</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.AxialAnalysisMethods.UserDefined.html">UserDefined</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="RSPileScripting.SoilProperties.BoredAnalysisMethods.html">BoredAnalysisMethods</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.BoredAnalysisMethods.Cohesionless.html">Cohesionless</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesionlessBetaNQMethod.html">CohesionlessBetaNQMethod</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesionlessKsDelta.html">CohesionlessKsDelta</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesionlessSPTAASHTO.html">CohesionlessSPTAASHTO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesionlessSPTTable.html">CohesionlessSPTTable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesionlessSPTUserDefined.html">CohesionlessSPTUserDefined</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.BoredAnalysisMethods.Cohesive.html">Cohesive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesiveEffectiveStress.html">CohesiveEffectiveStress</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesiveTotalStress.html">CohesiveTotalStress</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRock.html">WeakRock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRockSkinResistance.html">WeakRockSkinResistance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRockSkinResistanceKulhawyAndPhoon.html">WeakRockSkinResistanceKulhawyAndPhoon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRockSkinResistanceWilliamAndPells.html">WeakRockSkinResistanceWilliamAndPells</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRockTipResistance.html">WeakRockTipResistance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRockTipResistanceTomlinsonAndWoodward.html">WeakRockTipResistanceTomlinsonAndWoodward</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRockTipResistanceUserDefinedB.html">WeakRockTipResistanceUserDefinedB</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="RSPileScripting.SoilProperties.DrivenAnalysisMethods.html">DrivenAnalysisMethods</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.DrivenAnalysisMethods.Cohesionless.html">Cohesionless</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.DrivenAnalysisMethods.CohesionlessEndBearingSPTTable.html">CohesionlessEndBearingSPTTable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.DrivenAnalysisMethods.CohesionlessSkinFrictionSPTTable.html">CohesionlessSkinFrictionSPTTable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.DrivenAnalysisMethods.Cohesive.html">Cohesive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.DrivenAnalysisMethods.CohesiveUserDefined.html">CohesiveUserDefined</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="RSPileScripting.SoilProperties.HelicalAnalysisMethods.html">HelicalAnalysisMethods</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.HelicalAnalysisMethods.Cohesionless.html">Cohesionless</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.HelicalAnalysisMethods.Cohesive.html">Cohesive</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="RSPileScripting.SoilProperties.LateralAnalysisMethods.html">LateralAnalysisMethods</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.LateralAnalysisMethods.APISand.html">APISand</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.LateralAnalysisMethods.DryStiffClay.html">DryStiffClay</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.LateralAnalysisMethods.Elastic.html">Elastic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.LateralAnalysisMethods.HybridLiquefiedSand.html">HybridLiquefiedSand</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.LateralAnalysisMethods.Loess.html">Loess</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.LateralAnalysisMethods.MassiveRock.html">MassiveRock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.LateralAnalysisMethods.ModifiedStiffClayWithoutFreeWater.html">ModifiedStiffClayWithoutFreeWater</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.LateralAnalysisMethods.PiedmontResidual.html">PiedmontResidual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.LateralAnalysisMethods.Sand.html">Sand</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.LateralAnalysisMethods.Silt.html">Silt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.LateralAnalysisMethods.SoftClay.html">SoftClay</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.LateralAnalysisMethods.SoftClayWithUserDefinedJ.html">SoftClayWithUserDefinedJ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.LateralAnalysisMethods.StrongRock.html">StrongRock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.LateralAnalysisMethods.SubmergedStiffClay.html">SubmergedStiffClay</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">UserDefined</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RSPileScripting.SoilProperties.LateralAnalysisMethods.WeakRock.html">WeakRock</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.SoilProperties.AxialSoil.html">AxialSoil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.SoilProperties.BoredSoil.html">BoredSoil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.SoilProperties.CommonDatumEnums.html">CommonDatumEnums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.SoilProperties.Datum.html">Datum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.SoilProperties.DrivenSoil.html">DrivenSoil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.SoilProperties.HelicalSoil.html">HelicalSoil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.SoilProperties.InternalFrictionAngleMethod.html">InternalFrictionAngleMethod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.SoilProperties.LateralSoil.html">LateralSoil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.SoilProperties.SoilProperty.html">SoilProperty</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="RSPileScripting.Utilities.html">Utilities</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="RSPileScripting.Utilities.ColorPicker.html">ColorPicker</a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="RSPileScripting.GraphingOptionsEnums.html">GraphingOptionsEnums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RSPileScripting.PileResults.html">PileResults</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RSPileScripting.RSPileModel.html">RSPileModel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RSPileScripting.RSPileModeler.html">RSPileModeler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RSPileScripting.ResultsTable.html">ResultsTable</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="RSPileScripting.html" class="nav-link">RSPileScripting</a></li>
+    
+    
+    <li class="breadcrumb-item"><i class="fa-solid fa-ellipsis"></i></li>
+    
+    
+    <li class="breadcrumb-item"><a href="RSPileScripting.SoilProperties.LateralAnalysisMethods.html" class="nav-link">LateralAnalysisMethods</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">UserDefined</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="module-RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined">
+<span id="userdefined"></span><h1>UserDefined<a class="headerlink" href="#module-RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined" title="Link to this heading">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UserDefined</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">soil_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Client</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined.getVaryPYCurveByDepth">
+<span class="sig-name descname"><span class="pre">getVaryPYCurveByDepth</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined.getVaryPYCurveByDepth" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined.setVaryPYCurveByDepth">
+<span class="sig-name descname"><span class="pre">setVaryPYCurveByDepth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">varyPYCurveByDepth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined.setVaryPYCurveByDepth" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined.getPYCurve">
+<span class="sig-name descname"><span class="pre">getPYCurve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined.getPYCurve" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined.setPYCurve">
+<span class="sig-name descname"><span class="pre">setPYCurve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pyCurve</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined.setPYCurve" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined.getPYCurveBottom">
+<span class="sig-name descname"><span class="pre">getPYCurveBottom</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined.getPYCurveBottom" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined.setPYCurveBottom">
+<span class="sig-name descname"><span class="pre">setPYCurveBottom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pyCurveBottom</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined.setPYCurveBottom" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="RSPileScripting.SoilProperties.LateralAnalysisMethods.SubmergedStiffClay.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">SubmergedStiffClay</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="RSPileScripting.SoilProperties.LateralAnalysisMethods.WeakRock.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">WeakRock</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined"><code class="docutils literal notranslate"><span class="pre">UserDefined</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined.getVaryPYCurveByDepth"><code class="docutils literal notranslate"><span class="pre">UserDefined.getVaryPYCurveByDepth()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined.setVaryPYCurveByDepth"><code class="docutils literal notranslate"><span class="pre">UserDefined.setVaryPYCurveByDepth()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined.getPYCurve"><code class="docutils literal notranslate"><span class="pre">UserDefined.getPYCurve()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined.setPYCurve"><code class="docutils literal notranslate"><span class="pre">UserDefined.setPYCurve()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined.getPYCurveBottom"><code class="docutils literal notranslate"><span class="pre">UserDefined.getPYCurveBottom()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.UserDefined.setPYCurveBottom"><code class="docutils literal notranslate"><span class="pre">UserDefined.setPYCurveBottom()</span></code></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../_sources/generatedAPIDocFiles/RSPileScripting.SoilProperties.LateralAnalysisMethods.UserDefined.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, Rocscience Inc..
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.4.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

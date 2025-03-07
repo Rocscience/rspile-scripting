@@ -1,0 +1,7 @@
+ReinforcementPatternBaseClass
+=================================================================================
+
+.. automodule:: RSPileScripting.PileSection.ConcreteDesigner.ReinforcementPatternBaseClass
+   :members:
+   :show-inheritance:
+   :undoc-members:

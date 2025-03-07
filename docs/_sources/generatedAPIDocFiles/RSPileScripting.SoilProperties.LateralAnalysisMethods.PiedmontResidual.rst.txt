@@ -1,0 +1,7 @@
+PiedmontResidual
+=============================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.LateralAnalysisMethods.PiedmontResidual
+   :members:
+   :show-inheritance:
+   :undoc-members:

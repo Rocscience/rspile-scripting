@@ -1,0 +1,7 @@
+ModifiedStiffClayWithoutFreeWater
+==============================================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.LateralAnalysisMethods.ModifiedStiffClayWithoutFreeWater
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,7 @@
+AxialSoil
+===============================================
+
+.. automodule:: RSPileScripting.SoilProperties.AxialSoil
+   :members:
+   :show-inheritance:
+   :undoc-members:

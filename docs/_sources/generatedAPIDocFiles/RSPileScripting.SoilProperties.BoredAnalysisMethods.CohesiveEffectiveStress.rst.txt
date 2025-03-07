@@ -1,0 +1,7 @@
+CohesiveEffectiveStress
+==================================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesiveEffectiveStress
+   :members:
+   :show-inheritance:
+   :undoc-members:

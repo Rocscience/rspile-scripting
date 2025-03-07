@@ -1,0 +1,7 @@
+SquareHollow
+=========================================================================
+
+.. automodule:: RSPileScripting.PileSection.CrossSectionTypes.Helical.SquareHollow
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,7 @@
+BoredSoil
+===============================================
+
+.. automodule:: RSPileScripting.SoilProperties.BoredSoil
+   :members:
+   :show-inheritance:
+   :undoc-members:

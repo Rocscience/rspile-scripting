@@ -1,0 +1,7 @@
+LateralSoil
+=================================================
+
+.. automodule:: RSPileScripting.SoilProperties.LateralSoil
+   :members:
+   :show-inheritance:
+   :undoc-members:

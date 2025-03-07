@@ -1,0 +1,7 @@
+WeakRock
+===================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRock
+   :members:
+   :show-inheritance:
+   :undoc-members:

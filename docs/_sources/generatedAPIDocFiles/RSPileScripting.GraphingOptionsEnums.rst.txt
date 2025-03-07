@@ -1,0 +1,7 @@
+GraphingOptionsEnums
+===========================================
+
+.. automodule:: RSPileScripting.GraphingOptionsEnums
+   :members:
+   :show-inheritance:
+   :undoc-members:

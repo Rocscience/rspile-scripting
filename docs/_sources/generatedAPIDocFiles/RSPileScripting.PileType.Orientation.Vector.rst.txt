@@ -1,0 +1,7 @@
+Vector
+==================================================
+
+.. automodule:: RSPileScripting.PileType.Orientation.Vector
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,7 @@
+APISand
+==================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.AxialAnalysisMethods.APISand
+   :members:
+   :show-inheritance:
+   :undoc-members:

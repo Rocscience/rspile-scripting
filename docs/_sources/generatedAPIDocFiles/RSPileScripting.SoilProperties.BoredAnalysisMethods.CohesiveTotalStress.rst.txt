@@ -1,0 +1,7 @@
+CohesiveTotalStress
+==============================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.BoredAnalysisMethods.CohesiveTotalStress
+   :members:
+   :show-inheritance:
+   :undoc-members:

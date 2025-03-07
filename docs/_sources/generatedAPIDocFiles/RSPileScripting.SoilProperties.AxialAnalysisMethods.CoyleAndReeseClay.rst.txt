@@ -1,0 +1,7 @@
+CoyleAndReeseClay
+============================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.AxialAnalysisMethods.CoyleAndReeseClay
+   :members:
+   :show-inheritance:
+   :undoc-members:

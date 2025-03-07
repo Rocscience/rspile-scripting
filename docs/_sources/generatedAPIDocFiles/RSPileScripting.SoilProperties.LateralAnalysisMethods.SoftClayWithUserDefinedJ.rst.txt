@@ -1,0 +1,7 @@
+SoftClayWithUserDefinedJ
+=====================================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.LateralAnalysisMethods.SoftClayWithUserDefinedJ
+   :members:
+   :show-inheritance:
+   :undoc-members:

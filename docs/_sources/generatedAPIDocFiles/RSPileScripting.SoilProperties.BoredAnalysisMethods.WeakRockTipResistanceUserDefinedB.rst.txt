@@ -1,0 +1,7 @@
+WeakRockTipResistanceUserDefinedB
+============================================================================================
+
+.. automodule:: RSPileScripting.SoilProperties.BoredAnalysisMethods.WeakRockTipResistanceUserDefinedB
+   :members:
+   :show-inheritance:
+   :undoc-members:
