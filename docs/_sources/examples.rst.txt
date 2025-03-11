@@ -26,3 +26,4 @@ Model
    examples/pile_types/bored_pile_type
    examples/pile_types/helical_pile_type
    examples/results_analysis/pile_analysis_data_analysis
+   examples/results_analysis/c_phi_sensitivity_analysis

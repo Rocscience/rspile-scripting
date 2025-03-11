@@ -3,11 +3,11 @@
 RSPile Scripting Reference Manual
 ========================================================
 
-**Version: 0.1.0**
+**Version: 3.31.0**
 
 Prerequisites
 --------------------
-Before you begin, ensure you have the RSPile program installed. You must have at minimum Version 3.029 in order to use this feature.
+Before you begin, ensure you have the RSPile program installed. You must have at minimum Version 3.031 in order to use this feature.
 
 
 Python Environment
@@ -36,7 +36,7 @@ If you are not using the latest release of RSPile, you need to specify a library
 
 .. code-block::
 
-	pip install "RSPileScripting==3.029"
+	pip install "RSPileScripting==3.31.0"
 
 RSPile Scripting Tutorials
 ------------------------------

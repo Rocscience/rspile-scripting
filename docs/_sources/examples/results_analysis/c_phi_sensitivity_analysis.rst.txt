@@ -1,0 +1,14 @@
+C-Phi Sensitivity Analysis Example (Pile Analysis)
+===============================================================
+
+Download the `SoilStrengthAnalysis.rspile2 <https://github.com/Rocscience/rspile-scripting/blob/main/examples/SoilStrengthAnalysis.rspile2>`_ for this example.
+
+.. _c phi sensitivity:
+.. literalinclude:: ../../example_code/c_phi_sensitivity.py
+   :language: python
+   :caption: Code Snippet: Analysis of C-Phi Sensitivity (Pile Analysis)
+
+Output
+------------------
+.. literalinclude:: ../../example_code/c_phi_sensitivity_result.txt
+   :language: python

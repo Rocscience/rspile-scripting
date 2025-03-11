@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Pile Types (Driven) &#8212; RSPile Scripting Reference Manual  documentation</title>
+    <title>C-Phi Sensitivity Analysis Example (Pile Analysis) &#8212; RSPile Scripting Reference Manual  documentation</title>
   
   
   
@@ -43,12 +43,11 @@
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'examples/pile_types/driven_pile_type';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'examples/results_analysis/c_phi_sensitivity_analysis';</script>
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Pile Types (Bored)" href="bored_pile_type.html" />
-    <link rel="prev" title="Pile Types (Pile Analysis)" href="pile_analysis_pile_type.html" />
+    <link rel="prev" title="Results Analysis (Pile Analysis)" href="pile_analysis_data_analysis.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -299,12 +298,12 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="../pile_sections/bored_pile_section.html">Pile Sections (Bored)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pile_sections/helical_pile_section.html">Pile Sections (Helical)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pile_sections/prestressed_concrete_section.html">Prestressed Concrete Section (Pile Analysis)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pile_analysis_pile_type.html">Pile Types (Pile Analysis)</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Pile Types (Driven)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bored_pile_type.html">Pile Types (Bored)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="helical_pile_type.html">Pile Types (Helical)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../results_analysis/pile_analysis_data_analysis.html">Results Analysis (Pile Analysis)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../results_analysis/c_phi_sensitivity_analysis.html">C-Phi Sensitivity Analysis Example (Pile Analysis)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pile_types/pile_analysis_pile_type.html">Pile Types (Pile Analysis)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pile_types/driven_pile_type.html">Pile Types (Driven)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pile_types/bored_pile_type.html">Pile Types (Bored)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pile_types/helical_pile_type.html">Pile Types (Helical)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pile_analysis_data_analysis.html">Results Analysis (Pile Analysis)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">C-Phi Sensitivity Analysis Example (Pile Analysis)</a></li>
 </ul>
 </div>
 </nav></div>
@@ -345,7 +344,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="../../examples.html" class="nav-link">Python Script Examples</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Pile Types (Driven)</li>
+    <li class="breadcrumb-item active" aria-current="page">C-Phi...</li>
   </ul>
 </nav>
 </div>
@@ -362,37 +361,76 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="pile-types-driven">
-<h1>Pile Types (Driven)<a class="headerlink" href="#pile-types-driven" title="Link to this heading">#</a></h1>
-<p>Download the <a class="reference external" href="https://github.com/Rocscience/rspile-scripting/blob/main/examples/DrivenPile.rspile2">DrivenPile.rspile2</a> for this example.</p>
-<div class="literal-block-wrapper docutils container" id="id2">
-<span id="id1"></span><div class="code-block-caption"><span class="caption-text">Code Snippet: Manipulation of Pile Types (Driven)</span><a class="headerlink" href="#id2" title="Link to this code">#</a></div>
+  <section id="c-phi-sensitivity-analysis-example-pile-analysis">
+<h1>C-Phi Sensitivity Analysis Example (Pile Analysis)<a class="headerlink" href="#c-phi-sensitivity-analysis-example-pile-analysis" title="Link to this heading">#</a></h1>
+<p>Download the <a class="reference external" href="https://github.com/Rocscience/rspile-scripting/blob/main/examples/SoilStrengthAnalysis.rspile2">SoilStrengthAnalysis.rspile2</a> for this example.</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<span id="c-phi-sensitivity"></span><div class="code-block-caption"><span class="caption-text">Code Snippet: Analysis of C-Phi Sensitivity (Pile Analysis)</span><a class="headerlink" href="#id1" title="Link to this code">#</a></div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">RSPileScripting.RSPileModeler</span><span class="w"> </span><span class="kn">import</span> <span class="n">RSPileModeler</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">RSPileScripting.enums</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">RSPileScripting.Utilities.ColorPicker</span><span class="w"> </span><span class="kn">import</span> <span class="n">ColorPicker</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span><span class="o">,</span><span class="w"> </span><span class="nn">inspect</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">io</span>
 
 <span class="n">current_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">inspect</span><span class="o">.</span><span class="n">getfile</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="kc">None</span><span class="p">)))</span> 
-<span class="n">RSPileModeler</span><span class="o">.</span><span class="n">startApplication</span><span class="p">(</span><span class="mi">60044</span><span class="p">)</span>
+<span class="n">RSPileModeler</span><span class="o">.</span><span class="n">startApplication</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="mi">60044</span><span class="p">)</span>
 
 <span class="n">rspile_modeler</span> <span class="o">=</span> <span class="n">RSPileModeler</span><span class="p">(</span><span class="mi">60044</span><span class="p">)</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">rspile_modeler</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="sa">rf</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">current_dir</span><span class="si">}</span><span class="s2">\example_models\DrivenPile.rspile2&quot;</span><span class="p">)</span>
 
-<span class="n">pile_section_list</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">getPileTypes</span><span class="p">()</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">rspile_modeler</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="sa">rf</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">current_dir</span><span class="si">}</span><span class="s2">\example_models\SoilStrengthAnalysis.rspile2&quot;</span><span class="p">)</span>
 
-<span class="n">pile_type1</span> <span class="o">=</span> <span class="n">pile_section_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">soil_properties</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">getSoilProperties</span><span class="p">()</span>
+<span class="n">sand</span> <span class="o">=</span> <span class="n">soil_properties</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">clay</span> <span class="o">=</span> <span class="n">soil_properties</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 
-<span class="n">pile_type1</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s2">&quot;Driven Pile Type 1&quot;</span><span class="p">)</span>
-<span class="n">pile_type1</span><span class="o">.</span><span class="n">setColor</span><span class="p">(</span><span class="n">ColorPicker</span><span class="o">.</span><span class="n">Indigo</span><span class="p">)</span>
-<span class="n">pile_type1</span><span class="o">.</span><span class="n">Driven</span><span class="o">.</span><span class="n">Sections</span><span class="o">.</span><span class="n">setCrossSectionType</span><span class="p">(</span><span class="n">DrivenPileTypeCrossSection</span><span class="o">.</span><span class="n">TAPERED</span><span class="p">)</span>
-<span class="n">pile_type1</span><span class="o">.</span><span class="n">Driven</span><span class="o">.</span><span class="n">Sections</span><span class="o">.</span><span class="n">setTaperAngle</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
-<span class="n">pile_type1</span><span class="o">.</span><span class="n">Driven</span><span class="o">.</span><span class="n">Sections</span><span class="o">.</span><span class="n">setPileSegmentsByLength</span><span class="p">(</span><span class="mf">1.2</span><span class="p">,</span> <span class="p">[[</span><span class="s2">&quot;Timber Pile Section&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">]])</span>
+<span class="n">sand</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s2">&quot;Sand&quot;</span><span class="p">)</span>
+<span class="n">clay</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s2">&quot;Clay&quot;</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">pile_type1</span><span class="o">.</span><span class="n">getName</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ColorPicker</span><span class="o">.</span><span class="n">getColorName</span><span class="p">(</span><span class="n">pile_type1</span><span class="o">.</span><span class="n">getColor</span><span class="p">()))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">pile_type1</span><span class="o">.</span><span class="n">Driven</span><span class="o">.</span><span class="n">Sections</span><span class="o">.</span><span class="n">getCrossSectionType</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">pile_type1</span><span class="o">.</span><span class="n">Driven</span><span class="o">.</span><span class="n">Sections</span><span class="o">.</span><span class="n">getTaperAngle</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">pile_type1</span><span class="o">.</span><span class="n">Driven</span><span class="o">.</span><span class="n">Sections</span><span class="o">.</span><span class="n">getPileSegmentsByLength</span><span class="p">())</span>
+<span class="n">friction_angle</span> <span class="o">=</span> <span class="mi">35</span>
+<span class="n">sand</span><span class="o">.</span><span class="n">AxialProperties</span><span class="o">.</span><span class="n">setAxialType</span><span class="p">(</span><span class="n">AxialType</span><span class="o">.</span><span class="n">API_SAND</span><span class="p">)</span>
+
+<span class="n">undrained_shear_strength</span> <span class="o">=</span> <span class="mi">90</span>
+<span class="n">clay</span><span class="o">.</span><span class="n">AxialProperties</span><span class="o">.</span><span class="n">setAxialType</span><span class="p">(</span><span class="n">AxialType</span><span class="o">.</span><span class="n">API_CLAY</span><span class="p">)</span>
+
+<span class="n">pile_section_1</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">getPileSections</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">pile_section_1</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">setSectionType</span><span class="p">(</span><span class="n">SectionType</span><span class="o">.</span><span class="n">ELASTIC</span><span class="p">)</span>
+<span class="n">pile_section_1</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">Elastic</span><span class="o">.</span><span class="n">setCrossSectionType</span><span class="p">(</span><span class="n">ElasticCrossSectionType</span><span class="o">.</span><span class="n">CIRCULAR</span><span class="p">)</span>
+<span class="n">pile_section_1</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">Elastic</span><span class="o">.</span><span class="n">setYoungsModulus</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span>
+
+<span class="n">pile_type_1</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">getPileTypes</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">pile_type_1</span><span class="o">.</span><span class="n">PileAnalysis</span><span class="o">.</span><span class="n">Sections</span><span class="o">.</span><span class="n">setPileSegmentsByLength</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">[[</span><span class="n">pile_section_1</span><span class="o">.</span><span class="n">getName</span><span class="p">(),</span> <span class="mi">20</span><span class="p">]])</span>
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s1">&#39;Rocscience.RSPile._client&#39;</span><span class="p">)</span>
+<span class="n">log_stream</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">StringIO</span><span class="p">()</span>
+<span class="n">stream_handler</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">StreamHandler</span><span class="p">(</span><span class="n">log_stream</span><span class="p">)</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">addHandler</span><span class="p">(</span><span class="n">stream_handler</span><span class="p">)</span>  <span class="c1"># Attach the stream handler to capture logs</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">WARNING</span><span class="p">)</span>   <span class="c1"># Ensure warnings are logged</span>
+
+<span class="n">non_convergence</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="k">while</span> <span class="ow">not</span> <span class="n">non_convergence</span> <span class="ow">and</span> <span class="n">friction_angle</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">undrained_shear_strength</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">sand</span><span class="o">.</span><span class="n">AxialProperties</span><span class="o">.</span><span class="n">APISand</span><span class="o">.</span><span class="n">setFrictionAngle</span><span class="p">(</span><span class="n">friction_angle</span><span class="p">)</span>
+    <span class="n">clay</span><span class="o">.</span><span class="n">AxialProperties</span><span class="o">.</span><span class="n">APIClay</span><span class="o">.</span><span class="n">setUndrainedShearStrength</span><span class="p">(</span><span class="n">undrained_shear_strength</span><span class="p">)</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
+
+    <span class="c1"># Get log warnings from the stream</span>
+    <span class="n">log_stream</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">log_contents</span> <span class="o">=</span> <span class="n">log_stream</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="s2">&quot;Convergence may not be achieved&quot;</span> <span class="ow">in</span> <span class="n">log_contents</span><span class="p">:</span>
+        <span class="n">non_convergence</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Friction Angle at failure: </span><span class="si">{</span><span class="n">friction_angle</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Undrained Shear Strength at failure: </span><span class="si">{</span><span class="n">undrained_shear_strength</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">break</span>  <span class="c1"># Stop loop immediately if non-convergence warning is found</span>
+
+    <span class="n">friction_angle</span> <span class="o">-=</span> <span class="mf">0.5</span>
+    <span class="n">undrained_shear_strength</span> <span class="o">-=</span> <span class="mi">3</span>
+
+<span class="c1"># Cleanup</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">removeHandler</span><span class="p">(</span><span class="n">stream_handler</span><span class="p">)</span>
+<span class="n">log_stream</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
 <span class="n">model</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
 <span class="n">model</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -403,11 +441,8 @@ document.write(`
 </div>
 <section id="output">
 <h2>Output<a class="headerlink" href="#output" title="Link to this heading">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Driven</span> <span class="n">Pile</span> <span class="n">Type</span> <span class="mi">1</span>
-<span class="n">Indigo</span>
-<span class="n">DrivenPileTypeCrossSection</span><span class="o">.</span><span class="n">TAPERED</span>
-<span class="mf">0.3</span>
-<span class="p">(</span><span class="mf">1.2</span><span class="p">,</span> <span class="p">[[</span><span class="s1">&#39;Timber Pile Section&#39;</span><span class="p">,</span> <span class="mf">20.0</span><span class="p">]])</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Friction</span> <span class="n">Angle</span> <span class="n">at</span> <span class="n">failure</span><span class="p">:</span> <span class="mf">23.0</span>
+<span class="n">Undrained</span> <span class="n">Shear</span> <span class="n">Strength</span> <span class="n">at</span> <span class="n">failure</span><span class="p">:</span> <span class="mi">18</span>
 </pre></div>
 </div>
 </section>
@@ -424,22 +459,13 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="pile_analysis_pile_type.html"
+       href="pile_analysis_data_analysis.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Pile Types (Pile Analysis)</p>
+        <p class="prev-next-title">Results Analysis (Pile Analysis)</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="bored_pile_type.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Pile Types (Bored)</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -466,7 +492,7 @@ document.write(`
   <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="../../_sources/examples/pile_types/driven_pile_type.rst.txt">
+    <a href="../../_sources/examples/results_analysis/c_phi_sensitivity_analysis.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
