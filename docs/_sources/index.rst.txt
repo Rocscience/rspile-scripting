@@ -21,7 +21,7 @@ There are two methods to run a script, which differ in the Python environment us
 	* Requires downloading the **RSPile Python API library**
 	* For advanced users
 
-Please refer to `Getting Started with RSPile Python Scripting <https://www.rocscience.com/help/rs2/tutorials/scripting/getting-started-with-rs2-python-scripting>`_
+Please refer to `Getting Started with RSPile Python Scripting <https://www.rocscience.com/help/rspile/tutorials/tutorial-overview/19-getting-started-with-rspile-python-scripting>`_
 for more information.
 
 Install RSPile Python API Library
@@ -44,7 +44,7 @@ Please visit RSPile tutorial website for more detailed tutorials.
 
 
 
-1. `TODO: Link Case Study/Tutorial Once Complete. <https://www.rocscience.com/help/rs2/tutorials/scripting/getting-started-with-rs2-python-scripting>`_
+1. `Tutorial 20: Lateral Pile Analysis Optimization. <https://www.rocscience.com/help/rspile/tutorials/tutorial-overview/20-lateral-pile-analysis-optimization>`_
 
 .. image:: pictures/cover.png
 
