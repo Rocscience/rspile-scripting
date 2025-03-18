@@ -3,7 +3,7 @@
 RSPile Scripting Reference Manual
 ========================================================
 
-**Version: 3.31.0**
+**Version: 3.31.1**
 
 Prerequisites
 --------------------
