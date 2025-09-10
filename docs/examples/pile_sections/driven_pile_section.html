@@ -390,10 +390,7 @@ document.write(`
 
 <span class="n">pile_section2</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s2">&quot;H Pile Section&quot;</span><span class="p">)</span>
 <span class="n">pile_section2</span><span class="o">.</span><span class="n">setColor</span><span class="p">(</span><span class="n">ColorPicker</span><span class="o">.</span><span class="n">Gold</span><span class="p">)</span>
-<span class="n">pile_section2</span><span class="o">.</span><span class="n">DrivenCapacity</span><span class="o">.</span><span class="n">setCrossSectionType</span><span class="p">(</span><span class="n">DrivenCrossSectionType</span><span class="o">.</span><span class="n">H_PILE</span><span class="p">)</span>
-<span class="n">pile_section2</span><span class="o">.</span><span class="n">DrivenCapacity</span><span class="o">.</span><span class="n">HPile</span><span class="o">.</span><span class="n">setHPileTypeMetric</span><span class="p">(</span><span class="n">HPileTypeMetric</span><span class="o">.</span><span class="n">HP_360x132</span><span class="p">)</span>
-<span class="n">pile_section2</span><span class="o">.</span><span class="n">DrivenCapacity</span><span class="o">.</span><span class="n">HPile</span><span class="o">.</span><span class="n">setHPilePerimeter</span><span class="p">(</span><span class="n">HPilePerimeter</span><span class="o">.</span><span class="n">H_BOX_PERIMETER</span><span class="p">)</span>
-<span class="n">pile_section2</span><span class="o">.</span><span class="n">DrivenCapacity</span><span class="o">.</span><span class="n">HPile</span><span class="o">.</span><span class="n">setHPileArea</span><span class="p">(</span><span class="n">HPileArea</span><span class="o">.</span><span class="n">H_PILE_AREA</span><span class="p">)</span>
+<span class="n">pile_section2</span><span class="o">.</span><span class="n">DrivenCapacity</span><span class="o">.</span><span class="n">RolledSection</span><span class="o">.</span><span class="n">setDesignation</span><span class="p">(</span><span class="n">PileSectionDesignation</span><span class="o">.</span><span class="n">HP360_x_132</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">pile_section1</span><span class="o">.</span><span class="n">getName</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">ColorPicker</span><span class="o">.</span><span class="n">getColorName</span><span class="p">(</span><span class="n">pile_section1</span><span class="o">.</span><span class="n">getColor</span><span class="p">()))</span>
@@ -403,9 +400,9 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="n">pile_section2</span><span class="o">.</span><span class="n">getName</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">ColorPicker</span><span class="o">.</span><span class="n">getColorName</span><span class="p">(</span><span class="n">pile_section2</span><span class="o">.</span><span class="n">getColor</span><span class="p">()))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">pile_section2</span><span class="o">.</span><span class="n">DrivenCapacity</span><span class="o">.</span><span class="n">getCrossSectionType</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">pile_section2</span><span class="o">.</span><span class="n">DrivenCapacity</span><span class="o">.</span><span class="n">HPile</span><span class="o">.</span><span class="n">getHPileTypeMetric</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">pile_section2</span><span class="o">.</span><span class="n">DrivenCapacity</span><span class="o">.</span><span class="n">HPile</span><span class="o">.</span><span class="n">getHPilePerimeter</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">pile_section2</span><span class="o">.</span><span class="n">DrivenCapacity</span><span class="o">.</span><span class="n">HPile</span><span class="o">.</span><span class="n">getHPileArea</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pile_section2</span><span class="o">.</span><span class="n">DrivenCapacity</span><span class="o">.</span><span class="n">RolledSection</span><span class="o">.</span><span class="n">getShape</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pile_section2</span><span class="o">.</span><span class="n">DrivenCapacity</span><span class="o">.</span><span class="n">RolledSection</span><span class="o">.</span><span class="n">getType</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pile_section2</span><span class="o">.</span><span class="n">DrivenCapacity</span><span class="o">.</span><span class="n">RolledSection</span><span class="o">.</span><span class="n">getDesignation</span><span class="p">())</span>
 
 <span class="n">model</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
 <span class="n">model</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -423,9 +420,9 @@ document.write(`
 <span class="n">H</span> <span class="n">Pile</span> <span class="n">Section</span>
 <span class="n">Gold</span>
 <span class="n">DrivenCrossSectionType</span><span class="o">.</span><span class="n">H_PILE</span>
-<span class="n">HPileTypeMetric</span><span class="o">.</span><span class="n">HP_360x132</span>
-<span class="n">HPilePerimeter</span><span class="o">.</span><span class="n">H_BOX_PERIMETER</span>
-<span class="n">HPileArea</span><span class="o">.</span><span class="n">H_PILE_AREA</span>
+<span class="n">RolledSectionShape</span><span class="o">.</span><span class="n">I_BEAM</span>
+<span class="n">RolledSectionType</span><span class="o">.</span><span class="n">HP</span>
+<span class="n">HP360</span> <span class="n">x</span> <span class="mi">132</span>
 </pre></div>
 </div>
 </section>

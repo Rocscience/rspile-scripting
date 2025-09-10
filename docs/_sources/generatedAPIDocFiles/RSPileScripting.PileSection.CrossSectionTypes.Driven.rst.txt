@@ -7,11 +7,12 @@ Driven
 
    RSPileScripting.PileSection.CrossSectionTypes.Driven.ClosedEndPipe
    RSPileScripting.PileSection.CrossSectionTypes.Driven.Concrete
-   RSPileScripting.PileSection.CrossSectionTypes.Driven.HPile
    RSPileScripting.PileSection.CrossSectionTypes.Driven.OpenEndPipe
    RSPileScripting.PileSection.CrossSectionTypes.Driven.Raymond
+   RSPileScripting.PileSection.CrossSectionTypes.Driven.RolledSection
    RSPileScripting.PileSection.CrossSectionTypes.Driven.Timber
    RSPileScripting.PileSection.CrossSectionTypes.Driven.UserSelectedArea
+   RSPileScripting.PileSection.CrossSectionTypes.Driven.section_types
 
 
 .. automodule:: RSPileScripting.PileSection.CrossSectionTypes.Driven
