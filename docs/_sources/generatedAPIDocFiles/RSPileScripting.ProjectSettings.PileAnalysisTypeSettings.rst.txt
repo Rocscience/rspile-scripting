@@ -1,0 +1,7 @@
+PileAnalysisTypeSettings
+===============================================================
+
+.. automodule:: RSPileScripting.ProjectSettings.PileAnalysisTypeSettings
+   :members:
+   :show-inheritance:
+   :undoc-members:

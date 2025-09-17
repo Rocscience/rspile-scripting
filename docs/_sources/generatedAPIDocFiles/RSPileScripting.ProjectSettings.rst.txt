@@ -1,0 +1,21 @@
+ProjectSettings
+=======================================
+
+
+.. toctree::
+   :maxdepth: 1
+
+   RSPileScripting.ProjectSettings.Advanced
+   RSPileScripting.ProjectSettings.CapacityCalculations
+   RSPileScripting.ProjectSettings.General
+   RSPileScripting.ProjectSettings.Groundwater
+   RSPileScripting.ProjectSettings.InteractionDiagram
+   RSPileScripting.ProjectSettings.PileAnalysisTypeSettings
+   RSPileScripting.ProjectSettings.ProjectSettings
+   RSPileScripting.ProjectSettings.ProjectSettingsEnums
+
+
+.. automodule:: RSPileScripting.ProjectSettings
+   :members:
+   :show-inheritance:
+   :undoc-members:

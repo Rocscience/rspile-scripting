@@ -1,0 +1,7 @@
+InteractionDiagram
+=========================================================
+
+.. automodule:: RSPileScripting.ProjectSettings.InteractionDiagram
+   :members:
+   :show-inheritance:
+   :undoc-members:

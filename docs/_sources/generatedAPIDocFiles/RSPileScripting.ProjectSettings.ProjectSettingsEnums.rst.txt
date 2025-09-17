@@ -1,0 +1,7 @@
+ProjectSettingsEnums
+===========================================================
+
+.. automodule:: RSPileScripting.ProjectSettings.ProjectSettingsEnums
+   :members:
+   :show-inheritance:
+   :undoc-members:

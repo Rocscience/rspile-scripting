@@ -1,0 +1,7 @@
+ProjectSettings
+======================================================
+
+.. automodule:: RSPileScripting.ProjectSettings.ProjectSettings
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -7,6 +7,7 @@ RSPileScripting
 
    RSPileScripting.PileSection
    RSPileScripting.PileType
+   RSPileScripting.ProjectSettings
    RSPileScripting.SoilProperties
    RSPileScripting.Utilities
 

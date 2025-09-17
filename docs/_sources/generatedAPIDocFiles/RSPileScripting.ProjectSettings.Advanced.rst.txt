@@ -1,0 +1,7 @@
+Advanced
+===============================================
+
+.. automodule:: RSPileScripting.ProjectSettings.Advanced
+   :members:
+   :show-inheritance:
+   :undoc-members:

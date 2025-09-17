@@ -1,0 +1,7 @@
+CapacityCalculations
+===========================================================
+
+.. automodule:: RSPileScripting.ProjectSettings.CapacityCalculations
+   :members:
+   :show-inheritance:
+   :undoc-members:

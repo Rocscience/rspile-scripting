@@ -1,0 +1,7 @@
+General
+==============================================
+
+.. automodule:: RSPileScripting.ProjectSettings.General
+   :members:
+   :show-inheritance:
+   :undoc-members:
